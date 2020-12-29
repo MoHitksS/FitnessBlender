@@ -1,0 +1,135 @@
+body{
+    /* background-color: aquamarine; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.box-1{
+    display: flex;
+    width: 80%;
+    height: 600px;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+    margin: auto;
+}
+.content{
+    /* border: 1px solid black; */
+    width: 50%;
+    height: 100%;
+}
+.para{
+    margin-top: 30%;
+}
+.para>span{
+    font-size: 38px;
+}
+.para-1{
+    /* border: 1px solid red; */
+    width: 72%;
+    text-align: start;
+    margin-left: 15%;
+}
+.btn{
+    width: 36%;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: #4296cb;
+    color: white;
+    transition-duration: 1s;
+    
+
+}
+.btn:hover{
+    background-image: linear-gradient(to right top, #4296c3, #3e98d4, #3999d5, #349bd6, #2f9ce7);
+}
+.image{
+    /* border: 1px solid rebeccapurple; */
+    width: 50%;
+    height: 100%;
+}
+#img-1{
+    width: 590px;
+    height: 590px;
+    margin: 5px 5px;
+}
+.box-2{
+    display: flex;
+    width: 80%;
+    height: 600px;
+    flex-direction: row-reverse;
+    text-align: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+    margin: auto;
+}
+.All-Cards{
+    background-color: #f0f4f6;
+    width: 100%;
+    height: 600px;
+    /* border: 1px solid red; */
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+.card{
+    
+    /* box-shadow: 7px 7px 15px 0px rgba(15, 53, 50, 0.75); */
+    margin-right: 10px;
+    width: 21.3%;
+    height: 400px;
+    
+    /* transition-property: border; */
+    /* border: 1px solid red; */
+}
+
+.card-content{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 90%;
+    background-color: white;
+    transition-duration: 1s;
+}
+.card-content:hover{
+    border: 2px solid #4296cb;
+   
+}
+a:link{text-decoration: none;}
+.price{
+    background-color: white;  
+}
+.Big-Banner{
+    width: 100%;
+    height: 800px;
+    background-color: #222533;
+}
+.Big-Banner{
+    color: white;
+    position: relative;
+    text-align: center;
+}
+.flex-digit{
+    display: flex;
+    position:absolute;
+    width: 70%;
+    height: 300px;
+    border: 1px solid green;
+    justify-content: center;
+    left: 15%;
+    top: 28%;
+    text-align: center;
+    
+    
+}
+.testimonails{
+    width: 100%;
+    height: 600px;
+    border: 1px solid red;
+    background-color: #f1f6f8;
+}
