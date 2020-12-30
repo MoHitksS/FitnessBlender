@@ -9,7 +9,7 @@ body {
 }
 
 .top {
-	margin: 0;
+	margin-top: 240px;
 	padding: 3em 5em;
 	background-color: white;
 }
@@ -30,7 +30,7 @@ body {
 .card {
 	flex: 1;
 	position: relative;
-	flex-basis: 18em;
+	flex-basis: 30em;
 	margin: 0.3em;
 	background-color: white;
 	transition: box-shadow 0.35s ease-out;
@@ -42,7 +42,8 @@ body {
 }
 
 .card__content p {
-	font-size: 0.8em;
+	font-size: 1.2em;
+	padding-bottom: 0;
 	color: #4296cb;
 	font-weight: 300;
 }
@@ -50,14 +51,15 @@ body {
 .card__content h4 {
 	font-weight: 500;
 	color: #2c2e3a;
+	margin-top: 0;
 }
 
 .card__bottom {
-	width: 88%;
+	width: 85%;
 	display: flex;
 	position: absolute;
-	bottom: 1em;
-	left: 1em;
+	bottom: 2em;
+	left: 2em;
 
 	/* padding: 1.2em; */
 	flex-wrap: wrap;
@@ -68,18 +70,18 @@ body {
 }
 
 .fa-heart {
-	font-size: 1.3em;
+	font-size: 2em;
 	color: #a7aabb;
 }
 .fa-calendar {
-	font-size: 1.3em;
+	font-size: 2em;
 	color: #a7aabb;
 }
 
 .card__content {
 	padding: 1.2em;
 	background-color: white;
-	margin-bottom: 3em;
+	margin-bottom: 10em;
 	transition: all 0.5s ease-out;
 	/* -webkit-transition: -webkit-transform 0.35s ease-out;
 	transition: -webkit-transform 0.35s ease-out;
