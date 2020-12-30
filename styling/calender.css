@@ -53,8 +53,11 @@ body{
 }
 .daysName {
     text-align: right;
-    margin-right: 10px;
+    margin-right: 20px;
     margin-top: 18px;
     font-size: 13px;
     height: 30px;
+}
+#month {
+    margin-top: 25px;
 }

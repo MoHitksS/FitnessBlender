@@ -33,8 +33,11 @@ body {
 	flex-basis: 18em;
 	margin: 0.3em;
 	background-color: white;
+	overflow: hidden;
 	transition: box-shadow 0.35s ease-out;
+	
 }
+
 
 .card img {
 	width: 100%;
@@ -80,7 +83,7 @@ body {
 	padding: 1.2em;
 	background-color: white;
 	margin-bottom: 3em;
-	transition: all 0.5s ease-out;
+	/* transition: all 0.5s ease-out; */
 	/* -webkit-transition: -webkit-transform 0.35s ease-out;
 	transition: -webkit-transform 0.35s ease-out;
 	-o-transition: transform 0.35s ease-out; */
@@ -95,11 +98,17 @@ body {
 	position: absolute;
 	z-index: 9;
 	top: 0;
+	overflow: hidden;
 	left: 0;
-
+	animation: mymove 1s infinite;
+	animation-fill-mode: none;
 	/* height: 100%; */
 	/* bottom: 0; */
 }
+@keyframes mymove {
+	from {top: 100px;}
+	to {top: -100px;}
+  }
 
 .content__hidden {
 	list-style: none;
@@ -107,7 +116,7 @@ body {
 	display: none;
 	opacity: 0;
 	background-color: white;
-	transition: opacity 0.35s ease-out 0.15s;
+	transition: opacity 0.35s ease-out 0.35s;
 }
 
 .card:hover .content__hidden {

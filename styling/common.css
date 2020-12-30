@@ -122,14 +122,15 @@ ul li:hover ul.login{
 .login div:nth-child(2) {
     font-size: 1.2em;
     line-height: 20px;
+    margin-bottom: 20px;
 }
-.btn {
+.login-btn {
     height: 40px;
-    width: 150px;
+    width: 15rem;
     border-radius: 5px;
     background:#238DC1;
     color: #fff;
-    margin: 10px auto;
+    /* margin: 10px auto; */
     text-align: center;
 }
 .last-logo{
@@ -142,69 +143,7 @@ ul li:hover ul.login{
 
 /* TILL HERE----------------------------------- */
 
-/* ::content */
 
-
-
-.image1 {
-    margin-top: 105px;
-    position: absolute;
-    z-index: -1;
-}
-.image1 img {
-    width: 100vw;
-    height: 100vh;
-}
-.image-content {
-    position: absolute;
-    width: 28%;
-    margin: 15%;
-    font-family: Maison Neue,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
-    color: #fff;
-}
-h1 {
-    font-size: 50px;
-}
-h5 {
-    font-size: 20px;
-    color: #212432;
-    font-weight: 600;
-}
-.wrapper {
-    display: flex;
-    position: absolute;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-left: 10%;
-    /* background: #44485e; */
-    margin-top: 700px;
-}
-.wrapper-div {
-    width: 300px;
-    height: 260px;
-    margin: .5px;
-    background: #313444;
-    padding: 40px;
-    
-}
-.wrapper-div > h5 {
-    color: #fff;
-    margin-top: 20px;
-    font-size: 30px;
-}
-p {
-    color: #d8d3d3;
-    line-height: 40px;
-}
-.wrapper div:hover {
-    background: #151a2b;
-}
-.useLess {
-    height: 160vh;
-}  
-
-
-/* footer */
 
 
 /* FOOTER CSS FROM HERE------------------------------------------------------------------ */
