@@ -1,0 +1,60 @@
+body{
+    background: #e9e8e8;
+}
+.calender {
+    margin: auto;
+    margin-top: 140px;
+    margin-bottom: 20px;
+    width: 95%;
+    background: white;
+}
+.calender-header {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calender-header button {
+    height: 30px;
+    width: 100px;
+    border: none;
+    margin: 20px;
+}
+#calender {
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    grid-template-rows: repeat(5, auto);
+    height: 100%;
+}
+.day{
+    text-align: center;
+    padding: 5px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background-color 200ms, color 200ms;
+    height: 150px;
+    border-bottom: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    text-align: right;
+    padding-right: 15px;
+}
+.weekend {
+    color: #296080;
+}
+.selected {
+    background-color: lightblue;
+    color: white;
+}
+#days{
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+}
+.daysName {
+    text-align: right;
+    margin-right: 10px;
+    margin-top: 18px;
+    font-size: 13px;
+    height: 30px;
+}

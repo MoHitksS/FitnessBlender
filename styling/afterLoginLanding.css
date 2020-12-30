@@ -23,7 +23,10 @@ li {
 a {
     text-decoration: none;
 }
-
+.menu:hover {
+    text-decoration: none;
+    color: #212432;
+}
 
 .header-menu {
     font-size: 13px;

@@ -1,14 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- LINKS FROM HERE----------------------------------- -->
 
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
     <link href="https://cloudfront.fitnessblender.com/assets/bundle/styles-6308fdb649da5b93cc5f.css" rel="stylesheet">
-
     <link rel="shortcut icon" href="https://www.fitnessblender.com/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="https://cloudfront.fitnessblender.com/assets/img/icon/apple-touch-icon.png?v=2">
     <link rel="icon" type="image/png" sizes="32x32" href="https://cloudfront.fitnessblender.com/assets/img/icon/favicon-32x32.png">
@@ -20,15 +15,15 @@
     <meta name="msapplication-config" content="https://cloudfront.fitnessblender.com/assets/img/icon/browserconfig.xml">
     <meta name="theme-color" content="#fffefe">
 
-<!-- TILL HERE----------------------------------- -->
-
-    <script src="https://kit.fontawesome.com/3824cf4ce7.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./styling/common.css">
-    <title>fitness Blender</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styling/calender.css">
+    <link rel="stylesheet" href="./styling/afterLoginLanding.css">
+    <title>Calender</title>
 </head>
 <body>
+    <!-- Navbar -->
 
-<!-- HEADER   FROM HERE----------------------------------- -->
     <div class="header">
         <h1 class="brand"><a href="#">Fitness Blender</a></h1>
         <div>
@@ -93,14 +88,40 @@
         <ul>
             <li>
                 <div class="header-menu menu-login">
+                    <img class="menu-img" src="profile pic cropped .jpg" alt="">
                     <a href="#" class="menu">
-                        <div>Hi! Sign in</div>
+                        <div style="color: rgb(88, 180, 216);"> Hi! Himanshu</div>
                         <div>MY FITNESS &#9662</div>
                     </a>
-                    <ul class="login" id="">
-                      <h4>JOIN FOR FREE!</h4>
-                      <div>Join for free and start building and tracking your workouts, get support from other Fitness Blender members and more!</div>
-                      <li><a href="afterLoginLanding.html" class="btn">JOIN</a></li>
+                    <ul class="dashboard" id="">
+                            <li>
+                              <a class="dashboard-dash" href="#"><i class="material-icons-outlined">dashboard</i> Dashboard</a>
+                            </li>
+
+                            <li>
+                              <a class="dashboard-dash" href="#"><i class="material-icons-outlined">calendar_today</i>Calendar</a>
+                            </li>
+
+                            <li>
+                              <a class="dashboard-dash" href="#"><i class="material-icons-outlined">article</i>My Programs</a>
+                            </li>
+
+                            <li>
+                                <a class="dashboard-dash" class="dashboard-dash" href="#"><i class="material-icons-outlined">favorite_border</i>Favorites</a>
+                            </li>
+
+                            <li>
+                              <a class="dashboard-dash" href="#"><i class="material-icons-outlined">notifications</i>Notifications</a>
+                            </li>
+
+                            <li>
+                              <a class="dashboard-dash" href="#"><i class="material-icons-outlined">settings</i> Account</a>
+                            </li>
+                
+                            <li><a class="dashboard-dash" href="#"> <i class="material-icons-outlined">add</i> FB Plus</a></li>
+                                          
+                            <li><a class="dashboard-dash" href="common.html"><i class="material-icons-outlined">exit_to_app</i> Sign Out </a>
+                            </li>
                       
                     </ul>
                     <div class="header-menu last-logo">
@@ -111,56 +132,28 @@
             </li>
         </ul>
     </div>
-<!-- TILL HERE----------------------------------- -->
+    <!-- <div class="useLess"></div> -->
 
-    <!-- content -->
+    <!-- calender -->
 
 
-    <div class="image1">
-        <img src="https://d18zdz9g6n5za7.cloudfront.net/home/home-masthead-20201031-1340.jpg" alt="Kelli and Daniel" width="100%">
+    <div class="calender">
+        <div class="calender-header">
+            <button>arrow</button>
+            <h1 id="month"></h1>
+            <button>arrow</button>
+
+        </div>
+        <div id="days"></div>
+        <div id="calender"></div>
     </div>
-
-    <div class="image-content">
-        <h1>Workout videos for every fitness level. <br>
-            Absolutely free.</h1>
-        <h5>Earn your WORKOUT COMPLETE™</h5>
-    </div>
-    
-    <div class="wrapper">
-        <a href="#">
-            <div class="wrapper-div">
-                <h5>Working Video</h5>
-                <p>Access to hundreds of free, full-length workout videos. </p>
-            </div>
-        </a>
-        <a href="#">
-            <div class="wrapper-div">
-                <h5>Workout Program</h5>
-                <p>Affordable and effective workout programs.  </p>
-            </div>
-        </a>
-        <a href="#">
-            <div class="wrapper-div">
-                <h5>Meal Plans</h5>
-                <p>Plans built with registered dietitians and nutritionists.  </p>
-            </div>
-        </a>
-        <a href="#">
-            <div class="wrapper-div">
-                <h5>Fb Plus</h5>
-                <p>Add powerful features to your membership.  </p>
-            </div>
-        </a>
-    </div>
-    <div class="useLess"></div>
+    <script src="./script/calender.js"></script>
 
 
 
+    <!-- Footer -->
 
 
-
-
-<!-- FOOTER FROM HERE----------------------------------- -->
 
     <footer class="footer">
         <div class="footer-div1">
@@ -210,7 +203,5 @@
               </ul>
         </div>
     </footer>
-
-<!-- TILL HERE----------------------------------- -->
 </body>
 </html>
