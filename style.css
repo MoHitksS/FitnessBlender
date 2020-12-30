@@ -1,0 +1,214 @@
+body{
+    /* background-color: aquamarine; */
+    font-family: Maison Neue,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.box-1{
+    display: flex;
+    width: 80%;
+    height: 600px;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+    margin: auto;
+}
+.content{
+    /* border: 1px solid black; */
+    width: 50%;
+    height: 100%;
+}
+.para{
+    margin-top: 30%;
+}
+.para>span{
+    font-size: 38px;
+}
+.para-1{
+    /* border: 1px solid red; */
+    width: 72%;
+    text-align: start;
+    margin-left: 15%;
+}
+.btn{
+    width: 36%;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: #4296cb;
+    color: white;
+    transition-duration: 1s;
+    
+
+}
+.btn:hover{
+    background-image: linear-gradient(to right top, #4296c3, #3e98d4, #3999d5, #349bd6, #2f9ce7);
+}
+.image{
+    /* border: 1px solid rebeccapurple; */
+    width: 50%;
+    height: 100%;
+}
+#img-1{
+    width: 590px;
+    height: 590px;
+    margin: 5px 5px;
+}
+.box-2{
+    display: flex;
+    width: 80%;
+    height: 600px;
+    flex-direction: row-reverse;
+    text-align: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+    margin: auto;
+}
+.All-Cards{
+    background-color: #f0f4f6;
+    width: 100%;
+    height: 600px;
+    /* border: 1px solid red; */
+}
+.cards-line{
+    margin: 1% 15%;
+}
+#card-h2{
+    font-size: 50px;
+    
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 3% 10%;
+}
+.card{
+    margin-right: 10px;
+    width: 21.3%; 
+    /* //change to px */
+    height: 400px;
+}
+.card-image{
+    width: 100%;
+}
+.anchor-tag{
+    color: black;
+}
+.card-content{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 90%;
+    background-color: white;
+    transition-duration: 1s;
+}
+.card-content:hover{
+    border: 2px solid #4296cb;
+   
+}
+a:link{text-decoration: none;}
+.price{
+    background-color: white;  
+}
+.Big-Banner{
+    width: 100%;
+    height: 1000px;
+    background-color: #222533;
+    color: white;
+    border: 1px solid white;
+    text-align: center;
+}
+.Big-Banner>p{
+        color: lightgray;
+        margin-top: 10%;
+}
+.para-2{
+    /* border: 2px solid white; */
+    display: block;
+    width: 53%;
+    margin: 2% 24%;
+    padding: 2%;
+}
+.flex-digit{
+    display: flex;
+    margin: auto 15%;
+    width: 70%;
+    height: 300px;
+    /* border: 1px solid green; */
+    justify-content: center;
+    
+    text-align: center;
+    
+    
+}
+.digit-box{
+    /* border: 1px solid whitesmoke; */
+    margin: 0 2%;
+}
+.digit{
+    font-size: 80px;
+    font-style: normal;
+    color: #91eeda;
+}
+.testimonails{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 800px;
+    /* border: 1px solid red; */
+    background-color: #f1f6f8;
+}
+.bodybuilder{
+    display: block;
+    flex-wrap: wrap;
+    /* border: 1px solid red; */
+    width: 40%;
+    height: 40%;
+    margin: auto 5%;
+    text-align: center;
+
+}
+#testi-para{
+    font-size: 30px;
+}
+.Company-banner{
+    width: 100%;
+    height: 250px;
+    background-color: white;
+}
+/*   oon hover give text decoration */
+.ready-banner{
+    justify-content: center;
+    width: 100%;
+    height: 220px;
+    background-image: linear-gradient(to right top, #31b3ce, #30adcf, #33a7cf, #38a1ce, #409bcc);
+}
+.ready-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+    width: 80%;
+    height: 150px;
+    border: 1px solid red;
+    margin: auto;
+   
+
+}
+#start-btn{
+        width: 250px;
+        height: 50px;
+        border-radius: 10px;
+        background-color: black;
+        color: white;
+        display: block;
+        margin: auto 100px;
+        border: none;
+        transition-duration: 2s;
+}
+#start-btn:hover{
+    background-image: linear-gradient(to right top, #4296c3, #3e98d4, #3999d5, #349bd6, #2f9ce7);
+}
