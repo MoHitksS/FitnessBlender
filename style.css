@@ -73,22 +73,31 @@ body{
     height: 600px;
     /* border: 1px solid red; */
 }
+.cards-line{
+    margin: 1% 15%;
+}
+#card-h2{
+    font-size: 50px;
+    
+}
 .cards{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    margin-top: 3%;
+    margin: 3% 10%;
 }
 .card{
-    
-    /* box-shadow: 7px 7px 15px 0px rgba(15, 53, 50, 0.75); */
     margin-right: 10px;
-    width: 21.3%;
+    width: 21.3%; 
+    /* //change to px */
     height: 400px;
-    
-    /* transition-property: border; */
-    /* border: 1px solid red; */
 }
-
+.card-image{
+    width: 100%;
+}
+.anchor-tag{
+    color: black;
+}
 .card-content{
     /* border: 1px solid black; */
     width: 100%;
@@ -106,30 +115,62 @@ a:link{text-decoration: none;}
 }
 .Big-Banner{
     width: 100%;
-    height: 800px;
+    height: 1000px;
     background-color: #222533;
-}
-.Big-Banner{
     color: white;
-    position: relative;
+    border: 1px solid white;
     text-align: center;
+}
+.Big-Banner>p{
+        color: lightgray;
+        margin-top: 10%;
+}
+.para-2{
+    /* border: 2px solid white; */
+    display: block;
+    width: 53%;
+    margin: 2% 24%;
+    padding: 2%;
 }
 .flex-digit{
     display: flex;
-    position:absolute;
+    margin: auto 15%;
     width: 70%;
     height: 300px;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     justify-content: center;
-    left: 15%;
-    top: 28%;
+    
     text-align: center;
     
     
 }
+.digit-box{
+    /* border: 1px solid whitesmoke; */
+    margin: 0 2%;
+}
+.digit{
+    font-size: 80px;
+    font-style: normal;
+    color: #91eeda;
+}
 .testimonails{
+    display: flex;
+    justify-content: center;
     width: 100%;
-    height: 600px;
+    height: 800px;
     border: 1px solid red;
     background-color: #f1f6f8;
+}
+.bodybuilder{
+    display: block;
+    flex-wrap: wrap;
+    border: 1px solid red;
+    width: 40%;
+    height: 40%;
+    margin: auto 5%;
+    text-align: center;
+
+}
+#testi-para{
+    font-size: 30px;
 }
