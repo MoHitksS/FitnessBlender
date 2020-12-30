@@ -1,6 +1,6 @@
 body{
     /* background-color: aquamarine; */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Maison Neue,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
     position: relative;
     top: 0;
     left: 0;
@@ -158,13 +158,13 @@ a:link{text-decoration: none;}
     justify-content: center;
     width: 100%;
     height: 800px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     background-color: #f1f6f8;
 }
 .bodybuilder{
     display: block;
     flex-wrap: wrap;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 40%;
     height: 40%;
     margin: auto 5%;
@@ -173,4 +173,42 @@ a:link{text-decoration: none;}
 }
 #testi-para{
     font-size: 30px;
+}
+.Company-banner{
+    width: 100%;
+    height: 250px;
+    background-color: white;
+}
+/*   oon hover give text decoration */
+.ready-banner{
+    justify-content: center;
+    width: 100%;
+    height: 220px;
+    background-image: linear-gradient(to right top, #31b3ce, #30adcf, #33a7cf, #38a1ce, #409bcc);
+}
+.ready-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+    width: 80%;
+    height: 150px;
+    border: 1px solid red;
+    margin: auto;
+   
+
+}
+#start-btn{
+        width: 250px;
+        height: 50px;
+        border-radius: 10px;
+        background-color: black;
+        color: white;
+        display: block;
+        margin: auto 100px;
+        border: none;
+        transition-duration: 2s;
+}
+#start-btn:hover{
+    background-image: linear-gradient(to right top, #4296c3, #3e98d4, #3999d5, #349bd6, #2f9ce7);
 }
