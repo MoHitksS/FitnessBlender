@@ -1,9 +1,5 @@
 body {
-	font-family: Maison Neue, Helvetica Neue, Helvetica, Arial, Lucida Grande,
-		sans-serif;
-=======
 	font-family: "Roboto", sans-serif;
-
 	background-color: #f0f4f6;
 	margin: 0;
 }
@@ -13,22 +9,13 @@ body {
 }
 
 .top {
-
-	margin-top: 240px;
 	margin: 0;
-
 	padding: 3em 5em;
 	background-color: white;
 }
 
 .top h1 {
 	font-weight: 400;
-	font-size: 3.5em;
-}
-
-.top p {
-	color: rgb(87, 87, 87);
-	font-weight: 100;
 	font-size: 2.8em;
 }
 
@@ -43,8 +30,6 @@ body {
 .card {
 	flex: 1;
 	position: relative;
-	flex-basis: 30em;
-	margin: 0.4em;
 	flex-basis: 18em;
 	margin: 0.3em;
 	background-color: white;
@@ -57,14 +42,6 @@ body {
 }
 
 .card__content p {
-	font-size: 1.2em;
-	color: #4296cb;
-	font-weight: 600;
-	padding-bottom: 0;
-}
-
-.card__content h4 {
-	font-weight: 600;
 	font-size: 0.8em;
 	color: #4296cb;
 	font-weight: 300;
@@ -91,7 +68,6 @@ body {
 .card__content {
 	padding: 1.2em;
 	background-color: white;
-	margin-bottom: 5em;
 }
 
 .yellow {
@@ -99,7 +75,6 @@ body {
 	background-image: url(https://cloudfront.fitnessblender.com/assets/img/custom-cards/orange.png);
 	flex: 1;
 	position: relative;
-	flex-basis: 30em;
 	flex-basis: 18em;
 	margin: 0.3em;
 }
@@ -109,7 +84,6 @@ body {
 	background-image: url(https://cloudfront.fitnessblender.com/assets/img/custom-cards/red.png);
 	flex: 1;
 	position: relative;
-	flex-basis: 30em;
 	flex-basis: 18em;
 	margin: 0.3em;
 }
@@ -157,7 +131,6 @@ body {
 } */
 
 .bottom__right button {
-	padding: 0.5em;
 	padding: 1em;
 	width: 100%;
 	text-align: center;

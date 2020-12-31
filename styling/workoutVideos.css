@@ -9,7 +9,6 @@ body {
 }
 
 .top {
-	margin-top: 240px;
 	margin: 0;
 	padding: 3em 5em;
 	background-color: white;
@@ -31,12 +30,6 @@ body {
 .card {
 	flex: 1;
 	position: relative;
-	flex-basis: 30em;
-	margin: 0.3em;
-	background-color: white;
-	transition: box-shadow 0.35s ease-out;
-}
-
 	flex-basis: 18em;
 	margin: 0.3em;
 	background-color: white;
@@ -52,8 +45,6 @@ body {
 }
 
 .card__content p {
-	font-size: 1.2em;
-	padding-bottom: 0;
 	font-size: 0.8em;
 	color: #4296cb;
 	font-weight: 300;
@@ -62,24 +53,16 @@ body {
 .card__content h4 {
 	font-weight: 500;
 	color: #2c2e3a;
-	margin-top: 0;
-}
-
-.card__bottom {
-	width: 85%;
-	display: flex;
-	position: absolute;
-	bottom: 2em;
-	left: 2em;
 }
 
 .card__bottom {
 	width: 88%;
 	display: flex;
 	position: absolute;
-	bottom: 1em;
+	bottom: 0em;
 	left: 1em;
-
+	z-index: 999;
+	padding: 1.5rem;
 	/* padding: 1.2em; */
 	flex-wrap: wrap;
 	-webkit-box-pack: justify;
@@ -89,25 +72,26 @@ body {
 }
 
 .fa-heart {
-	font-size: 2em;
+	font-size: 1.3em;
 	color: #a7aabb;
 	cursor: pointer;
 }
-.fa-calendar {
-	font-size: 2em;
-	font-size: 1.3em;
-	color: #a7aabb;
+.fa-heart:hover {
+	color: red;
+	font-size: 1.6em;
 }
 .fa-calendar {
 	font-size: 1.3em;
 	color: #a7aabb;
+	cursor: pointer;
 }
-
+.fa-calendar:hover {
+	color: skyblue;
+	font-size: 1.6em;
+}
 .card__content {
 	padding: 1.2em;
 	background-color: white;
-	margin-bottom: 10em;
-	transition: all 0.5s ease-out;
 	margin-bottom: 3em;
 	/* transition: all 0.5s ease-out; */
 	/* -webkit-transition: -webkit-transform 0.35s ease-out;
@@ -123,22 +107,17 @@ body {
 .card:hover .card__content {
 	position: absolute;
 	z-index: 9;
-	top: 0;
-	left: 0;
-
-	/* height: 100%; */
-	/* bottom: 0; */
-}
+	top: -80px;
 	overflow: hidden;
 	left: 0;
-	animation: mymove 1s infinite;
+	animation: mymove 1s;
 	animation-fill-mode: none;
 	/* height: 100%; */
 	/* bottom: 0; */
 }
 @keyframes mymove {
 	from {top: 100px;}
-	to {top: -100px;}
+	to {top: -80px;}
   }
 
 .content__hidden {
@@ -147,7 +126,6 @@ body {
 	display: none;
 	opacity: 0;
 	background-color: white;
-	transition: opacity 0.35s ease-out 0.15s;
 	transition: opacity 0.35s ease-out 0.35s;
 }
 
@@ -174,4 +152,104 @@ body {
 }
 .card:hover {
 	box-shadow: 0px 0px 0px 3px rgba(66, 150, 203, 1);
+}
+
+
+
+
+
+.dynamicCal {
+	width: 60%;
+	height: 70vh;
+	/* padding: 50px; */
+	box-shadow: 5px 5px 10px #878592, -5px -5px 10px #3a393f;
+	position: fixed;
+	z-index: 1000;
+	margin: 9% 20%;
+	background: #f0f4f6;
+	visibility: hidden;
+}
+
+.cross-btn {
+	font-size: 25px;
+	border: none;
+	float: right;
+	margin: 15px;
+}
+.cal {
+	height: 90%;
+	width: 90%;
+	margin-top: 5%;
+	margin-left: 5%;
+	background: rosybrown;
+}
+
+
+
+/* calender css-------------------------------------------------------- */
+
+
+
+
+.day{
+    text-align: center;
+    padding: 5px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background-color 200ms, color 200ms;
+    height: 50px;
+    border-bottom: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    text-align: right;
+    padding-right: 15px;
+}
+
+.today-day{
+    text-align: center;
+    padding: 5px;
+    font-size: 13px;
+    cursor: pointer;
+    height: 150px;
+    border-bottom: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    text-align: right;
+    padding-right: 15px;
+    background: #30305c;
+    color: white;
+}
+.prev-day {
+    text-align: center;
+    padding: 5px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background-color 200ms, color 200ms;
+    height: 150px;
+    border-bottom: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    text-align: right;
+    padding-right: 15px;
+    color: rgb(219, 212, 212);
+}
+.weekend {
+    color: #296080;
+}
+.selected {
+    background-color: lightblue;
+    color: white;
+}
+#days{
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+}
+.daysName {
+    text-align: right;
+    margin-right: 20px;
+    margin-top: 18px;
+    font-size: 13px;
+    height: 30px;
+}
+#month {
+    margin-top: 25px;
 }

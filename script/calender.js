@@ -1,55 +1,56 @@
-const calender = document.getElementById('calender')
-const days = document.getElementById('days')
-
-let output = ""
-let dayName = ""
 var d = new Date();
-var y = d.getFullYear();
-var month = new Array();
-    month[0] = "January";
-    month[1] = "February";
-    month[2] = "March";
-    month[3] = "April";
-    month[4] = "May";
-    month[5] = "June";
-    month[6] = "July";
-    month[7] = "August";
-    month[8] = "September";
-    month[9] = "October";
-    month[10] = "November";
-    month[11] = "December";
-  
-    var d = new Date();
-    var n = month[d.getMonth()];
-    document.getElementById("month").innerHTML = n + " " +y;
+function renderCal (){
+    const calender = document.getElementById('calender')
+    const days = document.getElementById('days')
 
+    let output = ""
+    let dayName = ""
+    
 
+    // d.setMonth(5)
+    const lastDay = new Date(d.getFullYear(), d.getMonth()+1, 0).getDate()
+    console.log(lastDay)
+    var y = d.getFullYear();
+    var month =
+        ["January", "February", "March", "April",
+        "May", "June", "July", "August", "September", "October", "November", "December",]
+    
+        var n = month[d.getMonth()];
+        document.getElementById("month").innerHTML = n + " " + y;
 
-var m = d.getMonth();
-console.log(n, m)
-for(let i = 1; i <= 31; i++){
-    const date = new Date(y, m, i);
-    const options = {weekday: "long"};
-    const optionsM = {month: "long"};
+    const prev = new Date(d.getFullYear(), d.getMonth(), 0).getDate()
+    const firstDayIndex = d.getDay()
 
-    const day = new Intl.DateTimeFormat("en-US", options).format(date);
-    const Month = new Intl.DateTimeFormat("en-US", optionsM).format(date);
-    console.log(day, Month)
+    const lastDayC = new Date(d.getFullYear(), d.getMonth()+1, 0).getDay()
+    const nextDays  = 7 - lastDayC - 1
+    console.log(n, y, prev, firstDayIndex, nextDays)
 
-    if (i<=7) {
-        dayName += `<div class="daysName">${day}</div>`
+    for (j = firstDayIndex-1; j>=0; j--){
+        output += `<div class="prev-day">${prev - j}</div>`
     }
-    output += `<div class="day">${i}</div>`
+    for(let i = 1; i <= lastDay; i++){
+        
+        if (i === new Date().getDate() && d.getMonth() === new Date().getMonth()) {
+            output += `<div class="today-day">${i}</div>`
+        }else{
+            output += `<div class="day">${i}</div>`
+        }
+    }
+    for(k=1; k<=nextDays; k++){
+        output += `<div class="prev-day">${k}</div>`
+        calender.innerHTML = output
+    }
+    days.innerHTML = dayName
 }
-// count++
-calender.innerHTML = output
-days.innerHTML = dayName
 
-// console.log(calender)
-//  function showNextMonth () {
-//     let count = -1
-//    return count++
-//  }
+document.getElementById('revBtn').addEventListener('click', () => {
+    d.setMonth(d.getMonth()-1)
+    renderCal()
+})
+document.getElementById('forBtn').addEventListener('click', () => {
+    d.setMonth(d.getMonth()+1)
+    renderCal()
+})
+renderCal()
+// console.log(d.getMonth(), new Date().getMonth(), new Date().getDate())
 
-// const revBtn = document.getElementById('revBtn').addEventListener('click', showNextMonth)
-// const forBtn = document.getElementById('forBtn').addEventListener('click', showPrevMonth)
