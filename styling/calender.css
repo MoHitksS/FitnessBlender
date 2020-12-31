@@ -38,6 +38,33 @@ body{
     text-align: right;
     padding-right: 15px;
 }
+.today-day{
+    text-align: center;
+    padding: 5px;
+    font-size: 13px;
+    cursor: pointer;
+    height: 150px;
+    border-bottom: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    text-align: right;
+    padding-right: 15px;
+    
+    background: #30305c;
+    color: white;
+}
+.prev-day {
+    text-align: center;
+    padding: 5px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background-color 200ms, color 200ms;
+    height: 150px;
+    border-bottom: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    text-align: right;
+    padding-right: 15px;
+    color: rgb(219, 212, 212);
+}
 .weekend {
     color: #296080;
 }
