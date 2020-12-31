@@ -10,6 +10,7 @@ body {
 
 .top {
 	margin-top: 240px;
+	margin: 0;
 	padding: 3em 5em;
 	background-color: white;
 }
@@ -36,6 +37,15 @@ body {
 	transition: box-shadow 0.35s ease-out;
 }
 
+	flex-basis: 18em;
+	margin: 0.3em;
+	background-color: white;
+	overflow: hidden;
+	transition: box-shadow 0.35s ease-out;
+	
+}
+
+
 .card img {
 	width: 100%;
 	border-bottom: 1px solid #f0f4f6;
@@ -44,6 +54,7 @@ body {
 .card__content p {
 	font-size: 1.2em;
 	padding-bottom: 0;
+	font-size: 0.8em;
 	color: #4296cb;
 	font-weight: 300;
 }
@@ -60,6 +71,14 @@ body {
 	position: absolute;
 	bottom: 2em;
 	left: 2em;
+}
+
+.card__bottom {
+	width: 88%;
+	display: flex;
+	position: absolute;
+	bottom: 1em;
+	left: 1em;
 
 	/* padding: 1.2em; */
 	flex-wrap: wrap;
@@ -76,6 +95,11 @@ body {
 }
 .fa-calendar {
 	font-size: 2em;
+	font-size: 1.3em;
+	color: #a7aabb;
+}
+.fa-calendar {
+	font-size: 1.3em;
 	color: #a7aabb;
 }
 
@@ -84,6 +108,8 @@ body {
 	background-color: white;
 	margin-bottom: 10em;
 	transition: all 0.5s ease-out;
+	margin-bottom: 3em;
+	/* transition: all 0.5s ease-out; */
 	/* -webkit-transition: -webkit-transform 0.35s ease-out;
 	transition: -webkit-transform 0.35s ease-out;
 	-o-transition: transform 0.35s ease-out; */
@@ -103,6 +129,17 @@ body {
 	/* height: 100%; */
 	/* bottom: 0; */
 }
+	overflow: hidden;
+	left: 0;
+	animation: mymove 1s infinite;
+	animation-fill-mode: none;
+	/* height: 100%; */
+	/* bottom: 0; */
+}
+@keyframes mymove {
+	from {top: 100px;}
+	to {top: -100px;}
+  }
 
 .content__hidden {
 	list-style: none;
@@ -111,6 +148,7 @@ body {
 	opacity: 0;
 	background-color: white;
 	transition: opacity 0.35s ease-out 0.15s;
+	transition: opacity 0.35s ease-out 0.35s;
 }
 
 .card:hover .content__hidden {

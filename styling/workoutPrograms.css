@@ -1,6 +1,9 @@
 body {
 	font-family: Maison Neue, Helvetica Neue, Helvetica, Arial, Lucida Grande,
 		sans-serif;
+=======
+	font-family: "Roboto", sans-serif;
+
 	background-color: #f0f4f6;
 	margin: 0;
 }
@@ -10,7 +13,10 @@ body {
 }
 
 .top {
+
 	margin-top: 240px;
+	margin: 0;
+
 	padding: 3em 5em;
 	background-color: white;
 }
@@ -23,6 +29,7 @@ body {
 .top p {
 	color: rgb(87, 87, 87);
 	font-weight: 100;
+	font-size: 2.8em;
 }
 
 .main {
@@ -38,6 +45,8 @@ body {
 	position: relative;
 	flex-basis: 30em;
 	margin: 0.4em;
+	flex-basis: 18em;
+	margin: 0.3em;
 	background-color: white;
 	transition: box-shadow 0.35s ease-out;
 }
@@ -56,6 +65,13 @@ body {
 
 .card__content h4 {
 	font-weight: 600;
+	font-size: 0.8em;
+	color: #4296cb;
+	font-weight: 300;
+}
+
+.card__content h4 {
+	font-weight: 500;
 	color: #2c2e3a;
 }
 
@@ -84,6 +100,7 @@ body {
 	flex: 1;
 	position: relative;
 	flex-basis: 30em;
+	flex-basis: 18em;
 	margin: 0.3em;
 }
 
@@ -93,6 +110,7 @@ body {
 	flex: 1;
 	position: relative;
 	flex-basis: 30em;
+	flex-basis: 18em;
 	margin: 0.3em;
 }
 
@@ -140,6 +158,7 @@ body {
 
 .bottom__right button {
 	padding: 0.5em;
+	padding: 1em;
 	width: 100%;
 	text-align: center;
 	margin: auto;

@@ -128,6 +128,19 @@ ul li:hover ul.login {
 	color: #fff;
 	margin: 10px auto;
 	text-align: center;
+=======
+    font-size: 1.2em;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+.login-btn {
+    height: 40px;
+    width: 15rem;
+    border-radius: 5px;
+    background:#238DC1;
+    color: #fff;
+    /* margin: 10px auto; */
+    text-align: center;
 }
 .last-logo {
 	display: flex;
@@ -138,6 +151,7 @@ ul li:hover ul.login {
 }
 
 /* TILL HERE----------------------------------- */
+
 
 /* ::content */
 
@@ -197,8 +211,9 @@ p {
 .useLess {
 	height: 160vh;
 }
+=======
 
-/* footer */
+
 
 /* FOOTER CSS FROM HERE------------------------------------------------------------------ */
 
