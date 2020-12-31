@@ -49,16 +49,18 @@ body{
 
 }
 .sort{
-   
+   display: block;
     position: absolute;
     margin-top: 20px;
     margin-left: 88%;
-    border: 1px solid red;
+   
 }
 #sort-para{
     position: absolute;
     bottom: 0;
     right: 13.5%;
+    font-weight: lighter;
+    font-size: 13px;
 }
 .community-contents{
     width: 80%;
