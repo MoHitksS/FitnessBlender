@@ -72,6 +72,7 @@ body {
 .fa-heart {
 	font-size: 2em;
 	color: #a7aabb;
+	cursor: pointer;
 }
 .fa-calendar {
 	font-size: 2em;

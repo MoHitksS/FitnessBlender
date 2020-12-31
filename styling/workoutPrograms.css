@@ -1,5 +1,6 @@
 body {
-	font-family: "Roboto", sans-serif;
+	font-family: Maison Neue, Helvetica Neue, Helvetica, Arial, Lucida Grande,
+		sans-serif;
 	background-color: #f0f4f6;
 	margin: 0;
 }
@@ -16,7 +17,12 @@ body {
 
 .top h1 {
 	font-weight: 400;
-	font-size: 2.8em;
+	font-size: 3.5em;
+}
+
+.top p {
+	color: rgb(87, 87, 87);
+	font-weight: 100;
 }
 
 .main {
@@ -31,7 +37,7 @@ body {
 	flex: 1;
 	position: relative;
 	flex-basis: 30em;
-	margin: 0.3em;
+	margin: 0.4em;
 	background-color: white;
 	transition: box-shadow 0.35s ease-out;
 }
@@ -44,12 +50,12 @@ body {
 .card__content p {
 	font-size: 1.2em;
 	color: #4296cb;
-	font-weight: 300;
+	font-weight: 600;
 	padding-bottom: 0;
 }
 
 .card__content h4 {
-	font-weight: 500;
+	font-weight: 600;
 	color: #2c2e3a;
 }
 
