@@ -103,15 +103,16 @@ body{
 
 .message {
     display: none;
-    height: 120px;
-    width: 200px;
+    /* height: 120px; */
+    width: 120%;
+    margin: -14%;
     margin-top: 80px;
-    margin-left: -7%;
     background: white;
     position: absolute;
     box-shadow: 3px 3px 5px #818080, -3px -3px 5px #4e4e4e;
     z-index: 10;
     text-align: center;
+    padding: 15px;
 }
 .showingDay:hover div.message {
     display: block;
