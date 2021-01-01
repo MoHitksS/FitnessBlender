@@ -149,15 +149,13 @@ ul li:hover ul.login{
 /* FOOTER CSS FROM HERE------------------------------------------------------------------ */
 
 .footer {
-    height: 95vh;
+    /* height: 95vh; */
     width: 100vw;
     background: #212432;
     padding-top: 10rem;
-    padding-bottom: 3.2rem;
+    padding-bottom: 6rem;
     padding-left: 6rem;
     padding-right: 8rem;
-    margin-bottom: 50px;
-
 }
 h2 {
     /* display: block; */
@@ -172,6 +170,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
+    flex-wrap: wrap;
 }
 .footer-div1-border {
     padding-top: 50px;
@@ -206,6 +205,7 @@ h2 {
 .app {
     width: 300px;
     display: flex;
+    flex-wrap: wrap;
 }
 .app-logo {
     color: white;

@@ -187,14 +187,21 @@ h5 {
     color: #212432;
     font-weight: 600;
 }
+/* .before-wrapper { */
+    /* display: block;
+    justify-content: center; */
+    /* width: fit-content;
+    margin: auto;
+} */
 .wrapper {
     display: flex;
-    position: absolute;
+    /* position: absolute; */
     flex-wrap: wrap;
+    width: fit-content;
     justify-content: center;
-    margin-left: 10%;
+    margin: 0 9%;
     /* background: #44485e; */
-    margin-top: 700px;
+    /* margin-top: 700px; */
 }
 .wrapper-div {
     width: 300px;
@@ -234,7 +241,7 @@ p {
     padding-bottom: 3.2rem;
     padding-left: 6rem;
     padding-right: 8rem;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 
 }
 h2 {
