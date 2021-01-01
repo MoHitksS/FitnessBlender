@@ -120,3 +120,17 @@ body{
 .text {
     font-size: 1.2rem;
 }
+
+.remove {
+    width: fit-content;
+    margin: 10px auto;
+    /* height: 20px; */
+    background: #4296CB;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border: none;
+    color: white;
+    border-radius: 3px;
+    padding: 0 10px;
+}
+.remove:hover{ background: linear-gradient(135deg, #61bbf3, #4296CB)}
