@@ -1,6 +1,6 @@
 body {
 	font-family: "Roboto", sans-serif;
-	background-color: #f0f4f6;
+	background-color: white;
 	margin: 0;
 }
 
@@ -9,22 +9,27 @@ body {
 }
 
 .top {
-	margin: 15em 0;
+	margin: 15em 0 3em 6em;
 	padding: 3em 5em;
 	background-color: white;
 }
 
+.top p {
+	color: rgb(92, 92, 92);
+}
+
 .top h1 {
 	font-weight: 400;
-	font-size: 2.8em;
+	font-size: 4em;
 }
 
 .main {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
-	width: 97%;
-	margin: 3em auto;
+	justify-content: left;
+	width: 100%;
+	padding: 5em 10em;
+	background-color: #f0f4f6;
 }
 
 .card {
