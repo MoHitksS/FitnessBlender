@@ -78,6 +78,11 @@ body{
     border-bottom: 1px solid lightgray;
     border-top: 1px solid lightgray;
 }
+#days div {
+    font-size: 15px;
+    margin: 15px 10px;
+	/* margin-left: 10px; */
+}
 .daysName {
     text-align: right;
     margin-right: 20px;
@@ -87,4 +92,30 @@ body{
 }
 #month {
     margin-top: 25px;
+}
+.showingDay {
+    color: rgb(4, 63, 4);
+    font-weight: 600;
+    font-size: 20px;
+    background-color: #a6f8a6;
+    position: relative;
+}
+
+.message {
+    display: none;
+    height: 120px;
+    width: 200px;
+    margin-top: 80px;
+    margin-left: -7%;
+    background: white;
+    position: absolute;
+    box-shadow: 3px 3px 5px #818080, -3px -3px 5px #4e4e4e;
+    z-index: 10;
+    text-align: center;
+}
+.showingDay:hover div.message {
+    display: block;
+}
+.text {
+    font-size: 1.2rem;
 }

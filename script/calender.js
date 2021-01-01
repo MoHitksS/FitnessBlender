@@ -1,7 +1,6 @@
 var d = new Date();
 function renderCal (){
     const calender = document.getElementById('calender')
-    const days = document.getElementById('days')
 
     let output = ""
     let dayName = ""
@@ -25,22 +24,53 @@ function renderCal (){
     const nextDays  = 7 - lastDayC - 1
     console.log(n, y, prev, firstDayIndex, nextDays)
 
+    
     for (j = firstDayIndex-1; j>=0; j--){
         output += `<div class="prev-day">${prev - j}</div>`
     }
     for(let i = 1; i <= lastDay; i++){
         
-        if (i === new Date().getDate() && d.getMonth() === new Date().getMonth()) {
-            output += `<div class="today-day">${i}</div>`
-        }else{
-            output += `<div class="day">${i}</div>`
+        if (checkForDate(i)) {
+            if (i === new Date().getDate() && d.getMonth() === new Date().getMonth()) {
+                output += `<div class="today-day showingDay">${i}
+                    <div class="message">
+                        <div>${i}</div> 
+                        <div class="text">${textD[0].te}</div>
+                    </div>
+                </div>`
+            }else{
+                const textD = checkForDate(i)
+                console.log(textD)
+                output += 
+                `<div class="day showingDay">${i}
+                    <div class="message">
+                        <div>${i}</div> 
+                        <div class="text">${textD[0].te}</div>
+                    </div>
+                </div>`
+            }
+        }else {
+            if (i === new Date().getDate() && d.getMonth() === new Date().getMonth()) {
+                output += `<div class="today-day">${i}</div>`
+            }else{
+                output += `<div class="day">${i}</div>`
+            }
         }
     }
     for(k=1; k<=nextDays; k++){
         output += `<div class="prev-day">${k}</div>`
         calender.innerHTML = output
     }
-    days.innerHTML = dayName
+}
+
+function checkForDate (a) {
+    let data = JSON.parse(localStorage.getItem('calender'));
+    for (i in data){
+        const text = data[i].des
+        if (a === data[i].date) {
+            return [{tr: true, te: text}]
+        }
+    }
 }
 
 document.getElementById('revBtn').addEventListener('click', () => {

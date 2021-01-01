@@ -28,14 +28,13 @@ body {
 }
 
 .card {
-	flex: 1;
 	position: relative;
-	flex-basis: 18em;
+	width: 300px;
 	margin: 0.3em;
 	background-color: white;
 	overflow: hidden;
 	transition: box-shadow 0.35s ease-out;
-	
+	font-size: 13px;
 }
 
 
@@ -45,7 +44,7 @@ body {
 }
 
 .card__content p {
-	font-size: 0.8em;
+	font-size: 13px;
 	color: #4296cb;
 	font-weight: 300;
 }
@@ -53,6 +52,7 @@ body {
 .card__content h4 {
 	font-weight: 500;
 	color: #2c2e3a;
+	font-size: 1.5em;
 }
 
 .card__bottom {
@@ -61,7 +61,7 @@ body {
 	position: absolute;
 	bottom: 0em;
 	left: 1em;
-	z-index: 999;
+	z-index: 10;
 	padding: 1.5rem;
 	/* padding: 1.2em; */
 	flex-wrap: wrap;
@@ -126,13 +126,15 @@ body {
 	display: none;
 	opacity: 0;
 	background-color: white;
-	transition: opacity 0.35s ease-out 0.35s;
+	transition: opacity 0.35s ease-out;
+	transition-timing-function: ease;
 }
 
 .card:hover .content__hidden {
 	display: block;
 	opacity: 1;
-	transition: opacity 0.35s ease-out 0.15s;
+	/* transition: opacity 0.35s ease-out; */
+	transition-timing-function: ease;
 }
 
 .content__hidden li {
@@ -145,17 +147,20 @@ body {
 
 .term {
 	color: #878592;
+	/* font-size: 13px; */
+	line-height: 15px;
 }
 
 .def {
 	font-weight: 500;
+	/* font-size: 13px; */
 }
 .card:hover {
 	box-shadow: 0px 0px 0px 3px rgba(66, 150, 203, 1);
 }
 
 
-
+/* calender css-------------------------------------------------------- */
 
 
 .dynamicCal {
@@ -167,7 +172,7 @@ body {
 	z-index: 1000;
 	margin: 9% 20%;
 	background: #f0f4f6;
-	visibility: hidden;
+	display: none;
 }
 
 .cross-btn {
@@ -179,17 +184,29 @@ body {
 .cal {
 	height: 90%;
 	width: 90%;
-	margin-top: 5%;
+	/* margin-top: 5%; */
 	margin-left: 5%;
-	background: rosybrown;
 }
 
 
-
-/* calender css-------------------------------------------------------- */
-
-
-
+.calender-header {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calender-header button {
+    height: 30px;
+    width: 100px;
+    border: none;
+    margin: 20px;
+}
+#cal {
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    /* grid-template-rows: repeat(5, auto); */
+    height: 100%;
+}
 
 .day{
     text-align: center;
@@ -197,19 +214,23 @@ body {
     font-size: 13px;
     cursor: pointer;
     transition: background-color 200ms, color 200ms;
-    height: 50px;
+    height: 45px;
     border-bottom: 1px solid lightgray;
     border-right: 1px solid lightgray;
     text-align: right;
-    padding-right: 15px;
+	padding-right: 15px;
+	background: #4aa8ce;
+	color: white;
 }
-
+.day:hover {
+	background: #05597a;
+}
 .today-day{
     text-align: center;
     padding: 5px;
     font-size: 13px;
     cursor: pointer;
-    height: 150px;
+    height: 45px;
     border-bottom: 1px solid lightgray;
     border-right: 1px solid lightgray;
     text-align: right;
@@ -223,25 +244,28 @@ body {
     font-size: 13px;
     cursor: pointer;
     transition: background-color 200ms, color 200ms;
-    height: 150px;
+    height: 45px;
     border-bottom: 1px solid lightgray;
     border-right: 1px solid lightgray;
     text-align: right;
     padding-right: 15px;
     color: rgb(219, 212, 212);
 }
-.weekend {
-    color: #296080;
-}
+
 .selected {
     background-color: lightblue;
     color: white;
 }
-#days{
+.days{
     display: grid;
-    grid-template-columns: repeat(7, auto);
+	grid-template-columns: repeat(7, auto);
+	padding: 0 50px;
     border-bottom: 1px solid lightgray;
     border-top: 1px solid lightgray;
+}
+.days div {
+	font-size: 1.1rem;
+	margin-left: 10px;
 }
 .daysName {
     text-align: right;

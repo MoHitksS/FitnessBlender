@@ -101,7 +101,7 @@ ul li:hover ul.sub-menu{
     padding: 40px;
 }
 ul li ul.login {
-    min-width: 15vw; 
+    min-width: 250px; 
     background: #313443;
     display: none;
     position: absolute;
