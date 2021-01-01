@@ -4,7 +4,7 @@ let products = [
 	{
 		name:
 			"FB Low Impact Round 2 - Build Muscle & Burn Fat - 40 Minutes or Less",
-		price: "$11.99",
+		price: 11.99,
 		img:
 			"https://d18zdz9g6n5za7.cloudfront.net/plan/1020/1020-o_31_fb-low-impact-round-2-fat-loss-program-40-minutes-or-less.jpg",
 
@@ -12,7 +12,7 @@ let products = [
 	},
 	{
 		name: "FB Blend - Burn Fat, Build Muscle, Tone; 35 or 55 Minutes a Day",
-		price: "$12.99",
+		price: 12.99,
 		img:
 			"https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-o_29_4-week-fb-blend-burn-fat-build-muscle-tone-35-or-55-minutes-a-day.jpg",
 
@@ -20,7 +20,7 @@ let products = [
 	},
 	{
 		name: "FB 30 - Fat Loss Program For Busy People (Round 4)",
-		price: "$13.99",
+		price: 13.99,
 		img:
 			"https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-o_28_fb-30-4-week-fat-loss-program-for-busy-people-round-4.jpg",
 
@@ -28,7 +28,7 @@ let products = [
 	},
 	{
 		name: "FB Strong - 4 Week Build Muscle, Burn Fat and Feel Great",
-		price: "$14.99",
+		price: 14.99,
 		img:
 			"https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-o_26_4-week-fb-strong-build-muscle-burn-fat-and-feel-great.jpg",
 
@@ -36,7 +36,7 @@ let products = [
 	},
 	{
 		name: "Add FB Meal Plan to your order and get 20% Off",
-		price: "$15.99",
+		price: 15.99,
 		img:
 			"https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-o_22_fb-bodyweight-no-equipment-workouts-to-burn-fat-and-tone-up.jpg",
 
@@ -82,7 +82,6 @@ function setItem(product) {
 				[product.tag]: product,
 			};
 		}
-		// cartItems[product.tag].quant += 1;
 	} else {
 		// product.quant = 1;
 		cartItems = {
