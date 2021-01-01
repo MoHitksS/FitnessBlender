@@ -64,6 +64,7 @@ hr {
 	flex-wrap: wrap;
 }
 .bag-item-remove {
+	border: none;
 	width: 20%;
 	text-align: center;
 }
@@ -73,7 +74,7 @@ hr {
 }
 
 .bag-iteemm .fa-times {
-	font-size: 2em;
+	font-size: 1.5em;
 	cursor: pointer;
 }
 
