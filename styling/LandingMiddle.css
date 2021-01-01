@@ -32,6 +32,7 @@ body{
     width: 72%;
     text-align: start;
     margin-left: 15%;
+    color: black;
 }
 .btn{
     width: 36%;
@@ -91,7 +92,7 @@ body{
     
 }
 .card{
-    /* margin-right: 10px; */
+    
     width: 200px ; 
     /* //change to px */
     height: 400px;
@@ -112,15 +113,20 @@ body{
 }
 .card-content:hover{
     border: 2px solid #4296cb;
+    
    
 }
 a:link{text-decoration: none;}
 
 .price{
-    background-color: white;  
+   
+    background-color: white; 
+    /* border: 1px solid red;  */
 }
 .price>span{
+   
     font-size: 15px;
+
    
 }
 .Big-Banner{
