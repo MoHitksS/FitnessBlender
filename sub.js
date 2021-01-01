@@ -1,20 +1,17 @@
-document.getElementById("btn-1").addEventListener("click",function get(event){
-    event.preventDefault();
-   
-    var x = document.getElementById("topic").selectedIndex;
-    var y=document.getElementById("subtopic").selectedIndex;
-    console.log(x);
-    console.log(y);
-    console.log(document.getElementsByTagName("option")[x].value);
 
+
+document.getElementById("btn-1").addEventListener("click",(event)=>{
+    event.preventDefault();
+    var topic = document.getElementById("topic").selectedIndex;
+    var subtopic=document.getElementById("subtopic").selectedIndex;
+    var title=document.getElementById("title").value;
+    var message=document.getElementById("Message").value;
+    // console.log(message);
+    localStorage.setItem("topic",document.getElementsByTagName("option")[topic].value);
+    localStorage.setItem("title",title);
+    localStorage.setItem("message",message);
+    var h1=document.getElementById("subtopic");
+    console.log(h1)
+    
 
 });
-
-// function getdata(event){
-
-//     event.preventDefault();
-//     console.log(cicked)
-//     var x = document.getElementById("topic").selectedIndex;
-//     console.log(x)
-//     alert(document.getElementsByTagName("option")[x].value);
-// }

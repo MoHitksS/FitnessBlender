@@ -62,7 +62,7 @@ body{
     font-weight: lighter;
     font-size: 13px;
 }
-.community-contents{
+#community-contents{
     width: 80%;
     height: 800px;
     background-color: white;
