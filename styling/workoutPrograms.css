@@ -1,5 +1,6 @@
 body {
-	font-family: "Roboto", sans-serif;
+	font-family: Maison Neue, Helvetica Neue, Helvetica, Arial, Lucida Grande,
+		sans-serif;
 	background-color: #f0f4f6;
 	margin: 0;
 }
@@ -9,28 +10,30 @@ body {
 }
 
 .top {
-	margin: 0;
+	margin: 15em 0 3em 6em;
 	padding: 3em 5em;
 	background-color: white;
 }
 
 .top h1 {
 	font-weight: 400;
-	font-size: 2.8em;
+	font-size: 4em;
 }
 
 .main {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	width: 97%;
-	margin: 3em auto;
+	width: 100%;
+	padding-top: 5em;
+	padding-bottom: 5em;
+	margin: 0;
+	background-color: #f0f4f6;
 }
 
 .card {
-	flex: 1;
 	position: relative;
-	flex-basis: 18em;
+	width: 30em;
 	margin: 0.3em;
 	background-color: white;
 	transition: box-shadow 0.35s ease-out;
@@ -42,14 +45,16 @@ body {
 }
 
 .card__content p {
-	font-size: 0.8em;
+	font-size: 1.2em;
 	color: #4296cb;
 	font-weight: 300;
+	padding-bottom: 0;
 }
 
 .card__content h4 {
-	font-weight: 500;
+	font-weight: 600;
 	color: #2c2e3a;
+	margin-bottom: 3em;
 }
 
 .card__bottom {
@@ -73,18 +78,16 @@ body {
 .yellow {
 	background: #ffa23b;
 	background-image: url(https://cloudfront.fitnessblender.com/assets/img/custom-cards/orange.png);
-	flex: 1;
 	position: relative;
-	flex-basis: 18em;
+	width: 30em;
 	margin: 0.3em;
 }
 
 .red {
 	background: #ff505f;
 	background-image: url(https://cloudfront.fitnessblender.com/assets/img/custom-cards/red.png);
-	flex: 1;
 	position: relative;
-	flex-basis: 18em;
+	width: 30em;
 	margin: 0.3em;
 }
 
@@ -101,14 +104,16 @@ body {
 }
 
 .exclusive__card h1 {
-	font-size: 3.5em;
-	font-weight: 500;
+	margin-top: 1.5em;
+	font-size: 5.5em;
+	font-weight: 600;
 	margin-bottom: 0;
 }
 
 .exclusive__card h2 {
-	font-size: 1.7em;
-	font-weight: 400;
+	margin: 0 0 0.5em 0;
+	font-size: 3em;
+	font-weight: 500;
 	margin-top: 0;
 }
 
@@ -117,6 +122,12 @@ body {
 	height: 100%;
 	width: 100%;
 	margin-top: 6em;
+	color: white;
+}
+
+.exclusive__card p {
+	line-height: normal;
+	margin-top: 0.5em;
 	color: white;
 }
 
@@ -131,7 +142,7 @@ body {
 } */
 
 .bottom__right button {
-	padding: 1em;
+	padding: 5px 10px;
 	width: 100%;
 	text-align: center;
 	margin: auto;
