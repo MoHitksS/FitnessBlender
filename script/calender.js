@@ -37,6 +37,7 @@ function renderCal (){
                     <div class="message">
                         <div>${i}</div> 
                         <div class="text">${textD[0].te}</div>
+                        <button class="remove" onclick="removeEvent(${i})">REMOVE EVENT</button>
                     </div>
                 </div>`
             }else{                
@@ -45,6 +46,7 @@ function renderCal (){
                     <div class="message">
                         <div>${i}</div> 
                         <div class="text">${textD[0].te}</div>
+                        <button class="remove" onclick="removeEvent(${i})">Remove Event</button>
                     </div>
                 </div>`
             }
@@ -72,6 +74,18 @@ function checkForDate (a, b) {
     }
 }
 
+function removeEvent(id) {
+    console.log('remove')
+    const data = JSON.parse(localStorage.getItem('calender'));
+    for(i in data){
+        console.log(data[i].date, id)
+        if (data[i].date === id) {
+            data.splice(i, 1)
+        }
+    }
+    localStorage.setItem('calender', JSON.stringify(data))
+    renderCal()
+}
 document.getElementById('revBtn').addEventListener('click', () => {
     d.setMonth(d.getMonth()-1)
     renderCal()
