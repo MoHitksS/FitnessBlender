@@ -13,7 +13,9 @@ body {
 	padding: 3em 5em;
 	background-color: white;
 }
-
+.useless {
+	margin-top: 100px;
+}
 .top h1 {
 	font-weight: 400;
 	font-size: 2.8em;
@@ -42,7 +44,9 @@ body {
 	width: 100%;
 	border-bottom: 1px solid #f0f4f6;
 }
-
+.card__content {
+	width: 90%;
+}
 .card__content p {
 	font-size: 13px;
 	color: #4296cb;
