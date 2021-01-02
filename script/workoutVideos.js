@@ -17,9 +17,16 @@ function nextM() {
 	d.setMonth(d.getMonth() + 1);
 	renderCal();
 }
+<<<<<<< HEAD
+function closeBtn () {
+    calender.style.display = "none"
+    document.querySelector('.dynamicCal1').style.display = "none"
+    // console.log("clicked")
+=======
 function closeBtn() {
 	calender.style.display = "none";
 	// console.log("clicked")
+>>>>>>> 943e842cb95bd6cc28f663ac49e10790fb3d35b9
 }
 const btn = document.querySelectorAll(".fa-calendar");
 const description = document.querySelectorAll("h4");
@@ -82,6 +89,21 @@ function renderCal() {
 	// days.innerHTML = dayName
 }
 
+<<<<<<< HEAD
+function addEvent (dayValue) {
+    const description = document.querySelector('h4')
+    document.querySelector('.dynamicCal1').style.display = "block"
+    // console.log(description.textContent)
+    let data = JSON.parse(localStorage.getItem('calender')) || [];
+    const temp = {
+        des: description.textContent,
+        montH: d.getMonth(), 
+        date: dayValue,
+    }
+    data.push(temp);
+    localStorage.setItem('calender', JSON.stringify(data))
+    
+=======
 function addEvent(dayValue) {
 	const description = document.querySelector("h4");
 	// console.log(description.textContent)
@@ -93,4 +115,5 @@ function addEvent(dayValue) {
 	};
 	data.push(temp);
 	localStorage.setItem("calender", JSON.stringify(data));
+>>>>>>> 943e842cb95bd6cc28f663ac49e10790fb3d35b9
 }

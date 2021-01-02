@@ -129,6 +129,10 @@
             
         </div>
         <div style="margin-bottom: 30px;">or</div>
+        <div id="successPopup">
+            <h1>You are successfully craeted the account.</h1>
+            <a href="signIn.html"><button class="login-btn">sign In</button></a>
+        </div>
         <form id="signInForm">
             <input class="input" name="fname" type="text" placeholder="FirstName">
             <input class="input" name="lname" type="text" placeholder="LastName">
@@ -136,13 +140,18 @@
             <input class="input" type="text" name="userid" id="username" required placeholder="Username"/>
             <input class="input" type="password" name="pswrd" id="password" required placeholder="Password"/>
             <input class="input" type="text" name="pswrd1" id="password" required placeholder="Confirm password"/>
+            <input type="file" id="myFile" name="filename">
+            <div id="checkPass" >Password is not same.</div>
 
             <input type="button" onclick="check(this.form)" class="submitButton" value="Login"/>
 
-            <a href="/password/forgot" class="btn -anchor-link">Forgot Password?</a>
         </form>
 
-        <p class="medium light">Not a member yet? <a href="#">Join now -- it’s free!</a></p>
+        <p class="medium light">
+            By joining, you agree to the Fitness Blender
+            <a href="/page/terms-of-use-agreement">Terms of Service</a> and
+            <a href="/page/privacy-policy">Privacy Policy</a>
+        </p>
     </div>
     <div id="display"></div>
 
@@ -200,16 +209,37 @@
 
     <script>
         function check(form) {
-            const temp = {
+            const checkPass = document.getElementById('checkPass')
+            if (form.pswrd.value.length < 7) {
+                alert('Password should be more than 6 characters')
+            }
+            else {
+                if (form.pswrd.value === form.pswrd1.value) {
+                checkPass.style.display = "none"
+                const temp = {
                 fname: form.fname.value,
                 lname: form.lname.value,
                 email: form.email.value,
-                userid: uorm.userid.value,
-                pswrd: form.fnpswrdame.value
+                userid: form.userid.value,
+                pswrd: form.pswrd.value,
+                filename: form.filename.value
+                }
+                const data = JSON.parse(localStorage.getItem('signIn')) || []
+                data.push(temp)
+                localStorage.setItem('signIn', JSON.stringify(data))
+                form.fname.value = ""
+                form.lname.value = ""
+                form.email.value = ""
+                form.userid.value = ""
+                form.pswrd.value = ""
+                form.pswrd1.value = ""
+                document.getElementById('successPopup').style.display = "block"
+            }else {
+                checkPass.style.display = "block"
             }
-            const data = JSON.parse(localStorage.getItem('signIn')) || []
-            data.push(temp)
-            localStorage.setItem('signIn', JSON.stringify(data))
+            }
+            // console.log(temp)
+           
         }
     </script>
 

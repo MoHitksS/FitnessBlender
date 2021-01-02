@@ -185,6 +185,20 @@ body {
 	background: #f0f4f6;
 	display: none;
 }
+.dynamicCal1 {
+	width: 50%;
+	height: 60vh;
+	/* padding: 50px; */
+	box-shadow: 2px -2px 40px 20px rgba(44, 46, 58, 0.7);
+	position: fixed;
+	z-index: 100100;
+	margin: 12% 25%;
+	background: #f0f4f6;
+	display: none;
+	text-align: center;
+	font-size: 25px;
+	font-weight: 600;
+}
 
 .cross-btn {
 	font-size: 25px;
