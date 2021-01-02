@@ -195,6 +195,9 @@ a:link{text-decoration: none;}
     text-align: center;
 
 }
+.bodybuilder>p{
+    color: #8cb9d6;
+}
 #testi-para{
     font-size: 30px;
 }
