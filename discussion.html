@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Suggesion Submission</title>
+        <link rel="stylesheet" href="discussion.css">
+</head>
+<body>
+    <div class="container">
+            <div class="header">
+                <h1 id="header-h1">Start a Discussion</h1>
+            </div>
+
+            <div class="input-form">
+                <form  class="form-in" id="form-in">
+                    <div class="topic-div " id="topic-div">
+                        <label for="topic">Topic</label>
+                        <br>
+                        <select name="topic" id="topic" required>
+                            <option value="Select">Select</option>
+                            <option value="Workout">Workout</option>
+                            <option value="Nutrition">Nutrition</option>
+                            <option value="Community Chat">Community Chat</option>
+                            <option value="New To FB">New To FB</option>
+                            <option value="Customer Support">Customer Support</option>
+                        </select>
+                    </div>     
+                    
+                     <div>
+                         <label for="title">Title</label><br>
+                         <input id="title" type="text" required>
+                     </div>
+    
+                     <div>
+                         <label for="">Message</label><br>
+                         <textarea required name="Message" id="Message" cols="50" rows="15"></textarea>
+                     </div>
+    
+                    <button id="btn-1">PUBLISH</button>
+    
+                </form>
+
+            </div>
+            
+    </div>
+    <script src="sub.js"></script>
+    
+</body>
+</html>

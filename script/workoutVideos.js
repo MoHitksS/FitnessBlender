@@ -22,9 +22,11 @@ function closeBtn () {
     // console.log("clicked")
 }
 const btn = document.querySelectorAll('.fa-calendar')
-
+const description = document.querySelectorAll('h4')
 for(i=0; i<btn.length; i++){
+    const des = description[i].textContent
     btn[i].addEventListener('click', showCal)
+    
 }
 const crossBtn = document.getElementById('cross-btn')
 crossBtn.addEventListener('click', closeBtn)

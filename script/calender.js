@@ -30,22 +30,23 @@ function renderCal (){
     }
     for(let i = 1; i <= lastDay; i++){
         const textD = checkForDate(i)
-        // console.log(textD)
-        if (checkForDate(i) && d.getMonth() === textD[0].mo) {
+        // const heading = textD.te
+        console.log(textD)
+        if (checkForDate(i) && d.getMonth() === textD.mo) {
             if (i === new Date().getDate() && d.getMonth() === new Date().getMonth()) {
                 output += `<div class="today-day showingDay">${i}
                     <div class="message">
                         <div>${i}</div> 
-                        <div class="text">${textD[0].te}</div>
+                        <div class="text">${textD.te}</div>
                         <button class="remove" onclick="removeEvent(${i})">REMOVE EVENT</button>
                     </div>
                 </div>`
             }else{                
                 output += 
-                `<div class="day showingDay">${i}
+                `<div  onclick="showExercise(${textD.te})" class="day showingDay">${i}
                     <div class="message">
                         <div>${i}</div> 
-                        <div class="text">${textD[0].te}</div>
+                        <div class="text">${textD.te}</div>
                         <button class="remove" onclick="removeEvent(${i})">Remove Event</button>
                     </div>
                 </div>`
@@ -64,12 +65,12 @@ function renderCal (){
     }
 }
 
-function checkForDate (a, b) {
+function checkForDate (a) {
     let data = JSON.parse(localStorage.getItem('calender'));
     for (i in data){
         const text = data[i].des
         if (a === data[i].date) {
-            return [{tr: true, te: text, mo: data[i].montH}]
+            return {tr: true, te: text, mo: data[i].montH}
         }
     }
 }
@@ -86,6 +87,11 @@ function removeEvent(id) {
     localStorage.setItem('calender', JSON.stringify(data))
     renderCal()
 }
+
+function showExercise(text) {
+    console.log("header", "text")
+}
+
 document.getElementById('revBtn').addEventListener('click', () => {
     d.setMonth(d.getMonth()-1)
     renderCal()

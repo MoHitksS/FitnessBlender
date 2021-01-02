@@ -241,9 +241,10 @@ p {
     width: 100vw;
     background: #212432;
     padding-top: 10rem;
-    padding-bottom: 3.2rem;
+    padding-bottom: 6rem;
     padding-left: 6rem;
     padding-right: 8rem;
+
     /* margin-bottom: 50px; */
 }
 h2 {
@@ -259,7 +260,8 @@ h2 {
 .footer-div1 {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 50px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
 }
 .footer-div1-border {
 	padding-top: 50px;
@@ -275,7 +277,8 @@ h2 {
 	line-height: 1.2em;
 	margin-top: -50px;
 	display: flex;
-	margin-right: 5%;
+    margin-right: 5%;
+    flex-wrap: wrap;
 }
 .footer-div1-list ul {
 	margin: 0 20px;

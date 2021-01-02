@@ -143,7 +143,6 @@ ul li:hover ul.login {
 /* FOOTER CSS FROM HERE------------------------------------------------------------------ */
 
 .footer {
-<<<<<<< HEAD
     /* height: 95vh; */
     width: 100vw;
     background: #212432;
@@ -151,16 +150,6 @@ ul li:hover ul.login {
     padding-bottom: 6rem;
     padding-left: 6rem;
     padding-right: 8rem;
-=======
-	height: 95vh;
-	width: 100vw;
-	background: #212432;
-	padding-top: 10rem;
-	padding-bottom: 3.2rem;
-	padding-left: 6rem;
-	padding-right: 8rem;
-	margin-bottom: 50px;
->>>>>>> c3698351ee09d735e3852c8a0b1ed32307e4453b
 }
 h2 {
 	/* display: block; */
@@ -172,16 +161,10 @@ h2 {
 	/* font-weight: bold; */
 }
 .footer-div1 {
-<<<<<<< HEAD
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
     flex-wrap: wrap;
-=======
-	display: flex;
-	justify-content: space-between;
-	margin-bottom: 50px;
->>>>>>> c3698351ee09d735e3852c8a0b1ed32307e4453b
 }
 .footer-div1-border {
 	padding-top: 50px;
@@ -214,14 +197,10 @@ h2 {
 	font-weight: 600;
 }
 .app {
-<<<<<<< HEAD
     width: 300px;
     display: flex;
     flex-wrap: wrap;
-=======
-	width: 300px;
-	display: flex;
->>>>>>> c3698351ee09d735e3852c8a0b1ed32307e4453b
+
 }
 .app-logo {
 	color: white;

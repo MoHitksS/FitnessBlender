@@ -178,7 +178,7 @@ body {
 	width: 60%;
 	height: 70vh;
 	/* padding: 50px; */
-	box-shadow: 5px 5px 10px #878592, -5px -5px 10px #3a393f;
+	box-shadow: 2px -21px 400px 200px rgba(88,106,215,0.7);
 	position: fixed;
 	z-index: 1000;
 	margin: 9% 20%;

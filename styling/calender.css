@@ -109,7 +109,7 @@ body{
     margin-top: 80px;
     background: white;
     position: absolute;
-    box-shadow: 3px 3px 5px #818080, -3px -3px 5px #4e4e4e;
+    box-shadow: 5px 5px 10px #c7c3c3, -5px -5px 10px #b1aeae;
     z-index: 10;
     text-align: center;
     padding: 15px;
