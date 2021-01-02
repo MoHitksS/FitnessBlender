@@ -34,7 +34,7 @@ body {
 
 .card {
 	position: relative;
-	width: 300px;
+	width: 280px;
 	margin: 0.3em;
 	background-color: white;
 	overflow: hidden;
@@ -74,7 +74,7 @@ body {
 }
 
 .fa-heart {
-	font-size: 1.3em;
+	font-size: 1em;
 	color: #a7aabb;
 	cursor: pointer;
 }
@@ -184,6 +184,10 @@ body {
 	margin-top: 5%;
 	margin-left: 5%;
 	background: rosybrown;
+}
+
+.bottom__left {
+	border: none;
 }
 
 /* calender css-------------------------------------------------------- */
