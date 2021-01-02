@@ -13,6 +13,7 @@
 }
 h3{
     font-family: Maison Neue,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+    margin-top: 7px;
 }
 .google {
     display: flex;
@@ -37,7 +38,10 @@ h3{
 .google >div:first-child {
     background-color: #3F66B6;
 }
-
+.fab {
+    font-size: 18px;
+    margin-top: -5px;
+}
 .google >div:last-child {
     background-color:#db4a3c;
     border-color: #db4a3c;

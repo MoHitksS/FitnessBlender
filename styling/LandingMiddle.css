@@ -292,7 +292,7 @@ h5 {
     position: absolute;
     flex-wrap: wrap;
     justify-content: center;
-    /* margin-left: 10%; */
+    margin: 0 9%;
     /* background: #44485e; */
     margin-top: 700px;
 }

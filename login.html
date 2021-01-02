@@ -130,13 +130,12 @@
         </div>
         <div style="margin-bottom: 30px;">or</div>
         <form id="signInForm">
+            <input class="input" name="fname" type="text" placeholder="FirstName">
+            <input class="input" name="lname" type="text" placeholder="LastName">
+            <input class="input" name="email" type="email" placeholder="Email">
             <input class="input" type="text" name="userid" id="username" required placeholder="Username"/>
-            <input class="input" type="password" name="pswrd" id="password" required placeholder="password"/>
-        
-            <div class="checkbox">
-                <input type="checkbox" name="checkbox" id="checkbox">
-                <div>Remember Me</div>
-            </div>
+            <input class="input" type="password" name="pswrd" id="password" required placeholder="Password"/>
+            <input class="input" type="text" name="pswrd1" id="password" required placeholder="Confirm password"/>
 
             <input type="button" onclick="check(this.form)" class="submitButton" value="Login"/>
 
@@ -199,6 +198,20 @@
 
 
 
-    <script src="./script/signIn.js"></script>
+    <script>
+        function check(form) {
+            const temp = {
+                fname: form.fname.value,
+                lname: form.lname.value,
+                email: form.email.value,
+                userid: uorm.userid.value,
+                pswrd: form.fnpswrdame.value
+            }
+            const data = JSON.parse(localStorage.getItem('signIn')) || []
+            data.push(temp)
+            localStorage.setItem('signIn', JSON.stringify(data))
+        }
+    </script>
+
 </body>
 </html>
