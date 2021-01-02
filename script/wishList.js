@@ -63,15 +63,20 @@ let videos = [
 	{
 		name: "Add FB Meal Plan to your order and get 20% Off",
 		img:
-			"https://d18zdz9g6n5za7.cloudfront.net/video/320/320-767-bored-easily-bodyweight-cardio-workout-lower-body-and-core-cardio-with-low-impact-mods-980c.jpg",
+			"https://d18zdz9g6n5za7.cloudfront.net/video/320/320-778-lower-body-active-stretch-routine-pnf-stretch-routine-for-the-lower-body-9aae.jpg",
 		tag: "1010",
 	},
 ];
 
 for (let i = 0; i < items.length; i++) {
-	items[i].addEventListener("click", () => {
+	items[i].addEventListener("click", (x) => {
 		setVideo(videos[i]);
 	});
+}
+
+function toggleIcon(x) {
+	console.log(x);
+	x.classList.toggle("fas");
 }
 
 function setVideo(video) {

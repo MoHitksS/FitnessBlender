@@ -33,7 +33,7 @@ function displayFavourites() {
                 </div>
                 <div class="card__bottom">
                     <button class="bottom__left" onClick="removeFavourite(this.name)" name="${item.tag}">
-                        <i class="far fa-heart"></i>
+                        <i class="fas fa-heart"></i>
                     </button>
                     <div class="bottom__right">
                         <i class="far fa-calendar"></i>

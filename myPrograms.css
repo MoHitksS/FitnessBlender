@@ -9,22 +9,18 @@ body {
 }
 
 .top {
+	margin: 15em 0 3em 6em;
+	padding: 3em 5em;
 	background-color: white;
-}
-
-.top-top {
-	margin: 15em 0 0 6em;
-	padding: 3em 0;
 }
 
 .top p {
 	color: rgb(92, 92, 92);
 }
 
-.top-top h1 {
+.top h1 {
 	font-weight: 400;
 	font-size: 4em;
-	margin-bottom: 0;
 }
 
 .filters {

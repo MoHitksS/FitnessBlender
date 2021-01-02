@@ -75,39 +75,39 @@ function deleteItem(item) {
 // 	}
 // }
 
-function checkout() {
-	let cartItems = localStorage.getItem("productsInCart");
-	cartItems = JSON.parse(cartItems);
-	let newCartItems = {};
-	let alreadyBought = localStorage.getItem("boughtProducts");
-	alreadyBought = JSON.parse(alreadyBought);
-	if (alreadyBought != null) {
-		newCartItems = {
-			...cartItems,
-			...alreadyBought,
-		};
-	} else {
-		// product.quant = 1;
-		newCartItems = {
-			...cartItems,
-		};
-	}
-	localStorage.setItem("boughtProducts", JSON.stringify(newCartItems));
-	let objKeys = Object.keys(cartItems);
+// function checkout() {
+// 	let cartItems = localStorage.getItem("productsInCart");
+// 	cartItems = JSON.parse(cartItems);
+// 	let newCartItems = {};
+// 	let alreadyBought = localStorage.getItem("boughtProducts");
+// 	alreadyBought = JSON.parse(alreadyBought);
+// 	if (alreadyBought != null) {
+// 		newCartItems = {
+// 			...cartItems,
+// 			...alreadyBought,
+// 		};
+// 	} else {
+// 		// product.quant = 1;
+// 		newCartItems = {
+// 			...cartItems,
+// 		};
+// 	}
+// 	localStorage.setItem("boughtProducts", JSON.stringify(newCartItems));
+// 	let objKeys = Object.keys(cartItems);
 
-	objKeys.forEach((key) => {
-		delete cartItems[key];
-		let productNumbers = localStorage.getItem("itemNumbers");
-		productNumbers = Number(productNumbers);
-		localStorage.setItem("itemNumbers", productNumbers - 1);
-	});
-	localStorage.removeItem("productsInCart");
-	localStorage.setItem("productsInCart", JSON.stringify(cartItems));
-	displayCart();
-	onLoadCartItems();
-}
+// 	objKeys.forEach((key) => {
+// 		delete cartItems[key];
+// 		let productNumbers = localStorage.getItem("itemNumbers");
+// 		productNumbers = Number(productNumbers);
+// 		localStorage.setItem("itemNumbers", productNumbers - 1);
+// 	});
+// 	localStorage.removeItem("productsInCart");
+// 	localStorage.setItem("productsInCart", JSON.stringify(cartItems));
+// 	displayCart();
+// 	onLoadCartItems();
+// }
 
-checkoutButton.addEventListener("click", checkout);
+// checkoutButton.addEventListener("click", checkout);
 displayCart();
 onLoadCartItems();
 

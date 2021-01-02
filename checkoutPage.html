@@ -27,6 +27,7 @@
 		<meta name="theme-color" content="#fffefe">
         <link rel="stylesheet" href="./styling/afterLoginLanding.css">
         <link rel="stylesheet" href="shoppingBag.css">
+        <link rel="stylesheet" href="./checkOutPage.css">
 
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
 		<link
@@ -152,44 +153,39 @@
 		<!-- TILL HERE----------------------------------- -->
 		<div class="cont">
 			<div class="top">
-				<h1>Shopping Bag</h1>
+				<h1>Checkout</h1>
 			</div>
 			<div class="bag-cont">
-                <div class="bag-header">
-                    <div class="bag-item-head"><h3>ITEM</h3></div>
-                    <div class="bag-action-head"><h3>REMOVE</h3></div>
-                    <div class="bag-price-head"><h3>PRICE</h3></div>
-                </div>
-                <hr>
-                <div class="bag-list">
-					<!-- <div class="bag-iteemm">
-						<div class="bag-item-name">
-							<div class="bag-item-name-img">
-								<img src=${item.img} alt="">
-							</div>
-							<div class="bag-item-name-text">
-								<h3>${item.name}</h3>
-							</div>
-						</div>
-						<button class="bag-item-remove" onClick="deleteItem(this.name)" name="${
-							item.tag
-						}"><i class="fas fa-times"></i></button>
-						<div class="bag-item-price"><h3>$${String(item.price)}</h3></div>
-					</div>
-					<hr> -->
-                </div>
-                <div class="order-total">
-                    <div><h2>Order Total:</h2></div>
-                    <div class="total-price"><h2 class="tot-amount"></h2></div>
-                </div>
+                    <div class="reviewOrder">
+                        <div class="reviewOrder-head">
+                            <h2>Review Order</h2>
+                            <a href="./shoppingBag.html"><h3>Edit Cart</h3></a>
+                        </div>
+                        <hr>
+                        <div class="reviewOrder-content">
+                            <p>ITEM</p>
+                            <p>PRICE</p>
+                        </div>
+                        <hr>
+                        <div class="reviewOrder-content">
+                            <h3>FB Low Impact</h3>
+                            <h3>$14.99</h3>
+                        </div>
+                        <hr>
+                        <div class="reviewOrder-content">
+                            <h2>Order Total</h2>
+                            <h2>$14.99</h2>
+                        </div>
+                        <hr>
+                    </div>
 				<hr>
-				<a href="./checkoutPage.html">
+				<a href="./myPrograms.html">
 					<div class="bag-last">
-						<button class="proceed-to-checkout"><b>PROCEED TO CHECKOUT</b></button>
+						<button class="proceed-to-checkout"><b>PLACE ORDER</b></button>
 					</div>
 				</a>
 			</div>   
-			<div class="empty-shopping-bag">
+			<!-- <div class="empty-shopping-bag">
 				<h1>Your Shopping Bag is Empty</h1>
 				<p>Explore the site for programs, gifts, or FB Plus subscriptions.</p>
 				<a href="./workoutPrograms.html">
@@ -198,7 +194,7 @@
 						<i class="fas fa-external-link-alt"></i>
 					</button>
 				</a>	
-			</div>
+			</div> -->
         </div>
         <footer class="footer">
 			<div class="footer-div1">
@@ -249,5 +245,6 @@
 			</div>
 		</footer>
 	</body>
-	<script src="./shoppingCart.js"></script>
+    <!-- <script src="./shoppingCart.js"></script> -->
+    <script src="checkoutPage.js"></script>
 </html>
