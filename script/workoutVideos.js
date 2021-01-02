@@ -19,6 +19,7 @@ function nextM () {
 }
 function closeBtn () {
     calender.style.display = "none"
+    document.querySelector('.dynamicCal1').style.display = "none"
     // console.log("clicked")
 }
 const btn = document.querySelectorAll('.fa-calendar')
@@ -77,6 +78,7 @@ function renderCal (){
 
 function addEvent (dayValue) {
     const description = document.querySelector('h4')
+    document.querySelector('.dynamicCal1').style.display = "block"
     // console.log(description.textContent)
     let data = JSON.parse(localStorage.getItem('calender')) || [];
     const temp = {
@@ -86,7 +88,7 @@ function addEvent (dayValue) {
     }
     data.push(temp);
     localStorage.setItem('calender', JSON.stringify(data))
-
+    
 }
 
 
