@@ -17,4 +17,8 @@ The website also has Add to Cart functionality in the workout programs page. The
 
 ![Demo](https://media.giphy.com/media/NZNKgSkqs23V8u5cWM/giphy.gif)
 
+So these are some of the main functionalities. We hope you enjoyed the watching and rreading about our project.
 
+Please have a look at seperate blog post of each team member about what the challanges they faced and how was the overall experience.
+
+Thank you for reading about our project.
