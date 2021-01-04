@@ -10,6 +10,20 @@ body{
 .controls{
     display: flex;
 }
+.h3-comm{
+        margin-left: 170px;
+        font-size: 10px;
+        
+        font-weight: lighter;
+}
+#like{
+    margin-right: 80px;
+    color: black;
+}
+#reply{
+   margin-left: 120px;
+    
+}
 .community-h1{
     margin: 40px 40px;
     /* border: 1px solid red; */
