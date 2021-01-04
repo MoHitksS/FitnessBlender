@@ -1,7 +1,9 @@
 document.getElementById("btn").addEventListener("click",referpage)
 function referpage(){
+    updateData();
     window.location.href="discussion.html"
 }
+
 function updateData(){
     var com_div=document.getElementById("community-contents");
     var div=document.createElement("div");
@@ -14,7 +16,7 @@ function updateData(){
         <P>${"By Anshu"}</P>
     </div>
     <div>
-        <p>${localStorage.getItem("topic")}</p>
+        <p>${localStorage.getItem("topic")+"/Announcements"}</p>
     </div>
     <div>
         <p>${Math.floor(Math.random()*10)}</p>
