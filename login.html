@@ -101,8 +101,8 @@
                     <ul class="login" id="">
                       <h4>JOIN FOR FREE!</h4>
                       <div>Join for free and start building and tracking your workouts, get support from other Fitness Blender members and more!</div>
-                      <li><a href="afterLoginLanding.html"><button class="login-btn" >JOIN</button></a></li>
-                      <li><a href="afterLoginLanding.html"><button class="login-btn">Sign In</button></a></li>
+                      <li><a href="login.html"><button class="login-btn" >JOIN</button></a></li>
+                      <li><a href="signIn.html"><button class="login-btn">Sign In</button></a></li>
                       
                     </ul>
                     <div class="header-menu last-logo">
@@ -139,14 +139,13 @@
             <input class="input" name="email" type="email" placeholder="Email">
             <input class="input" type="text" name="userid" id="username" required placeholder="Username"/>
             <input class="input" type="password" name="pswrd" id="password" required placeholder="Password"/>
-            <input class="input" type="text" name="pswrd1" id="password" required placeholder="Confirm password"/>
-            <input type="file" id="myFile" name="filename">
+            <input class="input" type="text" name="pswrd1" id="password1" required placeholder="Confirm password"/>
+            <input type="file" id="myFile" name="filename" accept="image/png, image/jpeg" onchange="updateFilename(this.value)">
             <div id="checkPass" >Password is not same.</div>
 
             <input type="button" onclick="check(this.form)" class="submitButton" value="Login"/>
 
         </form>
-
         <p class="medium light">
             By joining, you agree to the Fitness Blender
             <a href="/page/terms-of-use-agreement">Terms of Service</a> and
@@ -154,6 +153,7 @@
         </p>
     </div>
     <div id="display"></div>
+    <img id="random" alt="">
 
 
     <footer class="footer">
@@ -208,8 +208,29 @@
 
 
     <script>
+
+        function extractFilename(path) {
+            if (path.substr(0, 12) == "C:\\fakepath\\")
+                return path.substr(12); // modern browser
+            var x;
+            x = path.lastIndexOf('/');
+            if (x >= 0) // Unix-based path
+                return path.substr(x+1);
+            x = path.lastIndexOf('\\');
+            if (x >= 0) // Windows-based path
+                return path.substr(x+1);
+            return path; // just the file name
+        }
+
+        function updateFilename(path) {
+            var name = extractFilename(path);
+            console.log(name)
+        }
+
         function check(form) {
-            const checkPass = document.getElementById('checkPass')
+
+            const temp1 = document.getElementById("myFile").files[0].name; 
+            console.log(temp1)
             if (form.pswrd.value.length < 7) {
                 alert('Password should be more than 6 characters')
             }
@@ -222,7 +243,7 @@
                 email: form.email.value,
                 userid: form.userid.value,
                 pswrd: form.pswrd.value,
-                filename: form.filename.value
+                filename: temp1
                 }
                 const data = JSON.parse(localStorage.getItem('signIn')) || []
                 data.push(temp)

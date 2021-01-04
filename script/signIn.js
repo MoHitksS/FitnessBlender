@@ -21,7 +21,14 @@ function check(form) {
             }
         }   
 }   
-
+function myFunction() {
+    var x = document.getElementById("myInput");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  }
 // function check(form)
 //     {
 //         if(form.userid.value == "myuserid" && form.pswrd.value == "password")
