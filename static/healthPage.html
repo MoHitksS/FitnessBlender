@@ -3,18 +3,11 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Workout Programs</title>
-		<link rel="stylesheet" href="./styling/workoutVideos.css" />
-		<link
-			rel="stylesheet"
-			href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-			integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
-			crossorigin="anonymous"
-		/>
+		<title>Health</title>
+		<link rel="stylesheet" href="./styling/workoutPrograms.css" />
 
 		<link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
 		<link href="https://cloudfront.fitnessblender.com/assets/bundle/styles-6308fdb649da5b93cc5f.css" rel="stylesheet">
-
 		<link rel="shortcut icon" href="https://www.fitnessblender.com/favicon.ico">
 		<link rel="apple-touch-icon" sizes="180x180" href="https://cloudfront.fitnessblender.com/assets/img/icon/apple-touch-icon.png?v=2">
 		<link rel="icon" type="image/png" sizes="32x32" href="https://cloudfront.fitnessblender.com/assets/img/icon/favicon-32x32.png">
@@ -25,15 +18,20 @@
 		<meta name="application-name" content="Fitness Blender">
 		<meta name="msapplication-config" content="https://cloudfront.fitnessblender.com/assets/img/icon/browserconfig.xml">
 		<meta name="theme-color" content="#fffefe">
-        <link rel="stylesheet" href="./styling/afterLoginLanding.css">
-        <link rel="stylesheet" href="./styling/shoppingBag.css">
+		<link rel="stylesheet" href="./styling/afterLoginLanding.css">
 
+
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+			integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+			crossorigin="anonymous"
+		/>
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap"
 			rel="stylesheet"
 		/>
-		
 	</head>
 	<body>
 
@@ -71,7 +69,7 @@
 						<div class="header-menu">
 							<a href="#" class="menu">COMMUNITY &#9662</a>
 							<ul class="sub-menu" id="">
-							  <li><a href="Community.html" class="menu-content"><i class="icon -community" aria-hidden="true"></i>COMUNITY</a></li>
+							  <li><a href="../Community.html" class="menu-content"><i class="icon -community" aria-hidden="true"></i>COMUNITY</a></li>
 							  <li><a href="#" class="menu-content"><i class="icon -blog" aria-hidden="true"></i>BLOG</a></li>
 							</ul>
 						</div>
@@ -101,9 +99,9 @@
 			<ul>
 				<li>
 					<div class="header-menu menu-login">
-						<div id="menu-img"></div>
+						<img class="menu-img" src="profile pic cropped .jpg" alt="">
 						<a href="#" class="menu">
-							<div id="showName" style="color: rgb(88, 180, 216);"></div>
+							<div style="color: rgb(88, 180, 216);"> Hi! Himanshu..!</div>
 							<div>MY FITNESS &#9662</div>
 						</a>
 						<ul class="dashboard" id="">
@@ -112,7 +110,7 @@
 								</li>
 	
 								<li>
-								  <a class="dashboard-dash" href="calender.html"><i class="material-icons-outlined">calendar_today</i>Calendar</a>
+								  <a class="dashboard-dash" href="../calender.html"><i class="material-icons-outlined">calendar_today</i>Calendar</a>
 								</li>
 	
 								<li>
@@ -133,7 +131,7 @@
 					
 								<li><a class="dashboard-dash" href="#"> <i class="material-icons-outlined">add</i> FB Plus</a></li>
 											  
-								<li><a class="dashboard-dash" href="index.html"><i class="material-icons-outlined">exit_to_app</i> Sign Out </a>
+								<li><a class="dashboard-dash" href="../index.html"><i class="material-icons-outlined">exit_to_app</i> Sign Out </a>
 								</li>
 						  
 						</ul>
@@ -149,58 +147,185 @@
 			</ul>
 		</div>
 	
-		<!-- TILL HERE----------------------------------- -->
+
+
 		<div class="cont">
-			<div class="top">
-				<h1>Shopping Bag</h1>
+			<div class="top-top">
+				<h1>Health</h1>
+				<p>
+					Content written by physical therapists, registered dietitians, and
+					certified personal trainers to empower you to live a healthier life.
+				</p>
 			</div>
-			<div class="bag-cont">
-                <div class="bag-header">
-                    <div class="bag-item-head"><h3>ITEM</h3></div>
-                    <div class="bag-action-head"><h3>REMOVE</h3></div>
-                    <div class="bag-price-head"><h3>PRICE</h3></div>
-                </div>
-                <hr>
-                <div class="bag-list">
-					<!-- <div class="bag-iteemm">
-						<div class="bag-item-name">
-							<div class="bag-item-name-img">
-								<img src=${item.img} alt="">
-							</div>
-							<div class="bag-item-name-text">
-								<h3>${item.name}</h3>
-							</div>
-						</div>
-						<button class="bag-item-remove" onClick="deleteItem(this.name)" name="${
-							item.tag
-						}"><i class="fas fa-times"></i></button>
-						<div class="bag-item-price"><h3>$${String(item.price)}</h3></div>
+			<div class="main">
+				<div class="card">
+					<div class="card__img">
+						<img
+							src="https://d18zdz9g6n5za7.cloudfront.net/blog/320/320-726-straighten-up-part-2-guide-to-workplace-ergonomics-and-workstation-set-up-a48c.jpg"
+							alt=""
+						/>
 					</div>
-					<hr> -->
-                </div>
-                <div class="order-total">
-                    <div><h2>Order Total:</h2></div>
-                    <div class="total-price"><h2 class="tot-amount"></h2></div>
-                </div>
-				<hr>
-				<a href="./checkoutPage.html">
-					<div class="bag-last">
-						<button class="proceed-to-checkout"><b>PROCEED TO CHECKOUT</b></button>
+					<div class="card__content">
+						<p>HEALTH</p>
+						<h4>
+							Straighten-up Part-2 : Guide to workplace ergonomics and
+							workstation setup.
+						</h4>
 					</div>
-				</a>
-			</div>   
-			<div class="empty-shopping-bag">
-				<h1>Your Shopping Bag is Empty</h1>
-				<p>Explore the site for programs, gifts, or FB Plus subscriptions.</p>
-				<a href="./workoutPrograms.html">
-					<button class="go-to-programs">
-						<h2>GO TO PROGRAMS</h2>
-						<i class="fas fa-external-link-alt"></i>
-					</button>
-				</a>	
+				</div>
+				<div class="card">
+					<div class="card__img">
+						<img
+							src="https://d18zdz9g6n5za7.cloudfront.net/blog/320/320-725-straighten-up-part-1-the-truth-about-posture-a555.jpg"
+							alt=""
+						/>
+					</div>
+					<div class="card__content">
+						<p>HEALTH</p>
+						<h4>The impact of weightloss on knees Osteoarthritis.</h4>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__img">
+						<img
+							src="https://d18zdz9g6n5za7.cloudfront.net/blog/320/320-732-5-ways-to-take-care-of-your-fascia-for-pain-free-movement-bba9.jpg"
+							alt=""
+						/>
+					</div>
+					<div class="card__content">
+						<p>HEALTH</p>
+						<h4>
+							Straighten-up Part-2 : Guide to workplace ergonomics and
+							workstation setup.
+						</h4>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__img">
+						<img
+							src="https://d18zdz9g6n5za7.cloudfront.net/blog/320/320-o_568_cardiovascular-disease-stroke-and-exercise.jpg"
+							alt=""
+						/>
+					</div>
+					<div class="card__content">
+						<p>HEALTH</p>
+						<h4>The impact of weightloss on knees Osteoarthritis.</h4>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__img">
+						<img
+							src="https://d18zdz9g6n5za7.cloudfront.net/blog/320/320-o_567_the-impact-of-weight-loss-on-knee-osteoarthritis.jpg"
+							alt=""
+						/>
+					</div>
+					<div class="card__content">
+						<p>HEALTH</p>
+						<h4>
+							Straighten-up Part-2 : Guide to workplace ergonomics and
+							workstation setup.
+						</h4>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__img">
+						<img
+							src="https://d18zdz9g6n5za7.cloudfront.net/blog/320/320-o_604_dealing-with-setbacks-how-to-stay-fit-while-injured-or-sick.jpg"
+							alt=""
+						/>
+					</div>
+					<div class="card__content">
+						<p>HEALTH</p>
+						<h4>The impact of weightloss on knees Osteoarthritis.</h4>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__img">
+						<img
+							src="https://d18zdz9g6n5za7.cloudfront.net/blog/320/320-o_582_how-to-improve-or-prevent-osteoporosis-with-nutrition-and-exercise.jpg"
+							alt=""
+						/>
+					</div>
+					<div class="card__content">
+						<p>HEALTH</p>
+						<h4>
+							Straighten-up Part-2 : Guide to workplace ergonomics and
+							workstation setup.
+						</h4>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__img">
+						<img
+							src="https://d18zdz9g6n5za7.cloudfront.net/blog/320/320-o_570_do-you-sit-too-much-sedentary-lifestyle-health-impacts-and-solutions.jpg"
+							alt=""
+						/>
+					</div>
+					<div class="card__content">
+						<p>HEALTH</p>
+						<h4>The impact of weightloss on knees Osteoarthritis.</h4>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__img">
+						<img
+							src="https://d18zdz9g6n5za7.cloudfront.net/blog/320/320-o_569_the-how-what-and-why-of-exercise-and-type-2-diabetes.jpg"
+							alt=""
+						/>
+					</div>
+					<div class="card__content">
+						<p>HEALTH</p>
+						<h4>
+							Straighten-up Part-2 : Guide to workplace ergonomics and
+							workstation setup.
+						</h4>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__img">
+						<img
+							src="https://d18zdz9g6n5za7.cloudfront.net/blog/800/800-o_543_the-best-kinds-of-exercise-for-lowering-your-stress-stress-relieving-workouts.jpg"
+							alt=""
+						/>
+					</div>
+					<div class="card__content">
+						<p>HEALTH</p>
+						<h4>The impact of weightloss on knees Osteoarthritis.</h4>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__img">
+						<img
+							src="https://d18zdz9g6n5za7.cloudfront.net/blog/320/320-o_538_what-do-carbs-proteins-and-fats-actually-do-a-breakdown-of-macronutrients.jpg"
+							alt=""
+						/>
+					</div>
+					<div class="card__content">
+						<p>HEALTH</p>
+						<h4>
+							Straighten-up Part-2 : Guide to workplace ergonomics and
+							workstation setup.
+						</h4>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__img">
+						<img
+							src="https://d18zdz9g6n5za7.cloudfront.net/blog/320/320-o_531_eating-clean-on-a-college-budget.jpg"
+							alt=""
+						/>
+					</div>
+					<div class="card__content">
+						<p>HEALTH</p>
+						<h4>The impact of weightloss on knees Osteoarthritis.</h4>
+					</div>
+				</div>
 			</div>
-        </div>
-        <footer class="footer">
+		</div>
+
+
+
+		<footer class="footer">
 			<div class="footer-div1">
 				<h2 class="brand -dark"><a href="/">Fitness Blender</a>
 					<p>WORKOUT COMPLETE<sup>™</sup></p>
@@ -248,7 +373,6 @@
 				  </ul>
 			</div>
 		</footer>
+		<script src="./script/numCartItems.js"></script>
 	</body>
-	<script src="./script/shoppingCart.js"></script>
-	<script src="./script/userData.js"></script>
 </html>
