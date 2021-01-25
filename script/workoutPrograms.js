@@ -1,6 +1,6 @@
 const getData = async () => {
 	try {
-		const response = await fetch("http://localhost:3000/programs", {
+		const response = await fetch("https://mock-server-fitness-blender.herokuapp.com/programs", {
 			method: "GET",
 		});
 		const data = await response.json();
@@ -68,7 +68,7 @@ function onLoadCartItems() {
 
 const itemNumbers = async (tag) => {
 	try {
-		const response = await fetch(`http://localhost:3000/programs?tag=${tag}`, {
+		const response = await fetch(`https://mock-server-fitness-blender.herokuapp.com/programs?tag=${tag}`, {
 			method: "GET",
 		});
 		const product = await response.json();
@@ -113,7 +113,7 @@ const searchKeyword = async () => {
 	const keyword = document.querySelector(".searchText").value;
 	console.log(keyword);
 	try {
-		const response = await fetch(`http://localhost:3000/programs`, {
+		const response = await fetch(`https://mock-server-fitness-blender.herokuapp.com/programs`, {
 			method: "GET",
 		});
 		const data = await response.json();
@@ -172,7 +172,7 @@ const sortData = async () => {
 	const selectedValue = document.querySelector(".selectSort").value;
 	console.log(selectedValue);
 	try {
-		const response = await fetch(`http://localhost:3000/programs`, {
+		const response = await fetch(`https://mock-server-fitness-blender.herokuapp.com/programs`, {
 			method: "GET",
 		});
 		let data = await response.json();
