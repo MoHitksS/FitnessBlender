@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Suggesion Submission</title>
     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
     <link href="https://cloudfront.fitnessblender.com/assets/bundle/styles-6308fdb649da5b93cc5f.css" rel="stylesheet">
 
@@ -16,20 +17,13 @@
     <meta name="application-name" content="Fitness Blender">
     <meta name="msapplication-config" content="https://cloudfront.fitnessblender.com/assets/img/icon/browserconfig.xml">
     <meta name="theme-color" content="#fffefe">
-
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/3824cf4ce7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styling/common.css">
+    <link rel="stylesheet" href="../styling/LandingMiddle.css">
+        <link rel="stylesheet" href="../styling/discussion.css">
 
-    <link rel="stylesheet" href="./styling/signIn.css">
-    <link rel="stylesheet" href="./styling/common.css">
-    <title>Document</title>
 </head>
 <body>
-
     <div class="header">
         <h1 class="brand"><a href="#">Fitness Blender</a></h1>
         <div>
@@ -95,14 +89,14 @@
             <li>
                 <div class="header-menu menu-login">
                     <a href="#" class="menu">
-                        <div>Hi! Sign in</div>
+                        <div id="showName" style="color: rgb(88, 180, 216);">Hi Visitor!</div>
                         <div>MY FITNESS &#9662</div>
                     </a>
                     <ul class="login" id="">
                       <h4>JOIN FOR FREE!</h4>
                       <div>Join for free and start building and tracking your workouts, get support from other Fitness Blender members and more!</div>
-                      <li><a href="afterLoginLanding.html"><button class="login-btn" >JOIN</button></a></li>
-                      <li><a href="afterLoginLanding.html"><button class="login-btn">Sign In</button></a></li>
+                      <li><a href="login.html"><button class="login-btn" >JOIN</button></a></li>
+                      <li><a href="signIn.html"><button class="login-btn">Sign In</button></a></li>
                       
                     </ul>
                     <div class="header-menu last-logo">
@@ -113,42 +107,47 @@
             </li>
         </ul>
     </div>
+        
+
 
 
     <div class="container">
-        <h2 class="heading">Sign In</h2>
-        <div class="google">
-            <div>
-                <i class="fab fa-facebook-f"></i>
-                <h3>FACEBOOK</h3>
+            <div class="headerds">
+                <h1 id="headerds-h1">Start a Discussion</h1>
             </div>
-            <div>
-                <i class="fab fa-google"></i>
-                <h3>GOOGLE</h3>
+
+            <div class="input-form">
+                <form  class="form-in" id="form-in">
+                    <div class="topic-div " id="topic-div">
+                        <label for="topic">Topic</label>
+                        <br>
+                        <select name="topic" id="topic" required>
+                            <option value="Select">Select</option>
+                            <option value="Workout">Workout</option>
+                            <option value="Nutrition">Nutrition</option>
+                            <option value="Community Chat">Community Chat</option>
+                            <option value="New To FB">New To FB</option>
+                            <option value="Customer Support">Customer Support</option>
+                        </select>
+                    </div>     
+                    
+                     <div>
+                         <label for="title">Title</label><br>
+                         <input id="title" type="text" required>
+                     </div>
+    
+                     <div>
+                         <label for="">Message</label><br>
+                         <textarea required name="Message" id="Message" cols="50" rows="15"></textarea>
+                     </div>
+    
+                    <button id="btn-1">PUBLISH</button>
+    
+                </form>
+
             </div>
             
-        </div>
-        <div style="margin-bottom: 30px;">or</div>
-        <form id="signInForm">
-            <input class="input" type="text" name="userid" id="username" required placeholder="Username"/>
-            <input class="input" type="password" name="pswrd" id="password" required placeholder="password"/>
-            
-        
-            <div class="checkbox">
-                <input type="checkbox" name="checkbox" id="checkbox">
-                <div>Remember Me</div>
-            </div>
-
-            <input type="button" onclick="check(this.form)" class="submitButton" value="Login"/>
-
-            <a href="/password/forgot" class="btn -anchor-link">Forgot Password?</a>
-        </form>
-
-        <p class="medium light">Not a member yet? <a href="#">Join now -- it’s free!</a></p>
     </div>
-    <div id="display"></div>
-
-
     <footer class="footer">
         <div class="footer-div1">
             <h2 class="brand -dark"><a href="/">Fitness Blender</a>
@@ -197,9 +196,7 @@
               </ul>
         </div>
     </footer>
-
-
-
-    <script src="./script/signIn.js"></script>
+    <script src="sub.js"></script>
+    
 </body>
 </html>

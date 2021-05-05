@@ -298,9 +298,10 @@ h5 {
 	font-weight: 600;
 }
 .wrapper {
+	width: 85%;
 	display: flex;
 	position: absolute;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	justify-content: center;
 	margin: 0 9%;
 	/* background: #44485e; */
