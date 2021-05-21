@@ -121,12 +121,23 @@ ul li:hover ul.login {
 	line-height: 20px;
 	margin-bottom: 20px;
 }
+
+.skip-btn{
+	height: 40px;
+	width: 15rem;
+	border-radius: 5px;
+	background: #004ad4;
+	color: #fff;
+	/* margin: 10px auto; */
+	text-align: center;
+}
+
 .login-btn {
 	height: 40px;
 	width: 15rem;
 	border-radius: 5px;
-	background: #238dc1;
-	color: #fff;
+	background: #5b7c8d;
+	color: rgb(204, 204, 204);
 	/* margin: 10px auto; */
 	text-align: center;
 }
