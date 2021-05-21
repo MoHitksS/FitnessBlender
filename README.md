@@ -20,6 +20,7 @@ The website also has Add to Cart functionality in the workout programs page. The
 So these are some of the main functionalities. We hope you enjoyed the watching and rreading about our project.
 
 Please have a look at seperate blog post of each team member about what the challanges they faced and how was the overall experience.
-<a href="https://hrdwivedi.medium.com/clone-of-fitness-blender-website-c1137e07d1ac">Himanshu's Blog</a>
+* <a href="https://mandarsatam97.medium.com/fitness-blender-clone-16faffc2296">Mandar's Blog</a>
+* <a href="https://hrdwivedi.medium.com/clone-of-fitness-blender-website-c1137e07d1ac">Himanshu's Blog</a>
 
 Thank you for reading about our project.
